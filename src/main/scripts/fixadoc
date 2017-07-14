@@ -1,0 +1,213 @@
+#!/bin/sh -- # This comment tells perl not to loop!
+#
+# DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+#
+# Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved.
+#
+# The contents of this file are subject to the terms of either the GNU
+# General Public License Version 2 only ("GPL") or the Common Development
+# and Distribution License("CDDL") (collectively, the "License").  You
+# may not use this file except in compliance with the License.  You can
+# obtain a copy of the License at
+# https://oss.oracle.com/licenses/CDDL+GPL-1.1
+# or LICENSE.txt.  See the License for the specific
+# language governing permissions and limitations under the License.
+#
+# When distributing the software, include this License Header Notice in each
+# file and include the License file at LICENSE.txt.
+#
+# GPL Classpath Exception:
+# Oracle designates this particular file as subject to the "Classpath"
+# exception as provided by Oracle in the GPL Version 2 section of the License
+# file that accompanied this code.
+#
+# Modifications:
+# If applicable, add the following below the License Header, with the fields
+# enclosed by brackets [] replaced by your own identifying information:
+# "Portions Copyright [year] [name of copyright owner]"
+#
+# Contributor(s):
+# If you wish your version of this file to be governed by only the CDDL or
+# only the GPL Version 2, indicate your decision by adding "[Contributor]
+# elects to include this software in this distribution under the [CDDL or GPL
+# Version 2] license."  If you don't indicate a single choice of license, a
+# recipient has the option to distribute your version of this file under
+# either the CDDL, the GPL Version 2 or to extend the choice of license to
+# its licensees as provided above.  However, if you add GPL Version 2 code
+# and therefore, elected the GPL Version 2 license, then the option applies
+# only if the new code is made subject to such option by the copyright
+# holder.
+#
+
+# fixadoc [file ...]
+#
+#	fix asciidoc output from pandoc for the Java EE Tutorial files
+#	given file.txt, the fixed output is in file.adoc
+
+#
+eval 'exec perl -S $0 "$@"'
+if 0;
+
+if ($#ARGV >= 0) {
+	foreach $arg (@ARGV) {
+		if (!open(STDIN, $arg)) {
+			printf "%s: can not open\n", $arg;
+		} else {
+			$out = $arg;
+			$out =~ s/(\.[a-z]*)?$/.adoc/;
+			if ($out eq $arg) {
+				$out = $arg . "+";
+			}
+			if (!open(OUT, ">" . $out)) {
+				printf "%s: can not write\n", $out;
+			} else {
+				&fixadoc($arg);
+				close(OUT);
+				close(STDIN);
+			}
+		}
+	}
+} else {
+	&fixadoc("<stdin>", STDOUT);
+}
+
+sub fixadoc {
+
+local($title);
+local($saw_copyright) = 0;
+
+# read the title line(s)
+
+title_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last title_line if (/^=/);
+	$title = $title . $_ . ' ';
+}
+
+$title =~ s/ $//;
+
+# print the jekyl header
+
+print OUT "type=page\n";
+print OUT "status=published\n";
+print OUT "title=$title\n";
+print OUT "~~~~~~\n";
+print OUT "$title\n";
+print OUT "$_\n";
+
+# read everything before the first header table
+
+preheader_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last preheader_line if (/\[width=/);
+	if (/^link:#BEGIN/) {
+		<STDIN>;
+		next preheader_line;
+	}
+	s:\.\./\.\./dcommon/gifs:img:;
+	s/\.htm([^l])/.html\1/g;
+	print OUT "$_\n";
+}
+
+# beginning of the header table
+print OUT '[width="100%",cols="50%,45%,^5%",]', "\n";
+$_ = <STDIN>;
+s/\r?\n$//;
+print OUT "$_\n";
+
+header_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last header_line if (/^$/);
+	next header_line if (/^\|=/);
+	if (/\[cols=/) {
+		<STDIN>;
+		print OUT "|\n";
+		next header_line;
+	}
+	s/ a\|//;
+	s/\|.*\|/|/;
+	s:\.\./\.\./dcommon/gifs:img:;
+	s/\.htm([^l])/.html\1/g;
+	print OUT "$_\n";
+}
+
+# read lines from the end of the header table through the end of
+# the subheader table, including lines between the two tables and
+# lines after the subheader table up to the [[BEGIN]] line
+
+subheader_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last subheader_line if (/\[\[BEGIN]]/);
+	if (/\[cols=/) {
+		# beginning of subheader table
+		print OUT '[cols="^5%,^5%,90%",]', "\n";
+		next subheader_line;
+	}
+	s/ a\|//;
+	s/\|.*\|/|/;
+	s:\.\./\.\./dcommon/gifs:img:;
+	s/\.htm([^l])/.html\1/g;
+	print OUT "$_\n";
+}
+
+# read lines of the body until we get to the footer table
+
+body_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last body_line if (/\[width="66%",cols="50%,,50%",]/);
+	if (/^Beta Draft:/) {
+		<STDIN>;
+		next body_line;
+	}
+	s:\.\./\.\./dcommon/gifs:img:;
+	s/\.htm([^l])/.html\1/g;
+	print OUT "$_\n";
+}
+
+# beginning of footer table
+
+print OUT '[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]', "\n";
+print OUT "|====================================================================\n";
+# throw away a few unneeded lines
+skip_lines:
+while (<STDIN>) {
+	s/\r?\n$//;
+	last skip_lines if (/\[width=/);
+}
+
+footer_line:
+while (<STDIN>) {
+	s/\r?\n$//;
+	next footer_line if (/^\|=/);
+	next footer_line if (/^\|\302\240$/);
+	if (/^$/) {
+		last footer_line if ($saw_copyright);
+		print OUT "|\n";
+		next footer_line;
+	}
+	if (/^Copyright/) {
+		print OUT "Copyright © 2017, Oracle and/or its affiliates. All rights reserved.]\n";
+		$saw_copyright = 1;
+		next footer_line;
+	}
+	if (/\[cols=",",]/) {
+		<STDIN>;
+		print OUT "|\n";
+		next footer_line;
+	}
+	s/^\|.*\|/|/;
+	s/^ \|/|/;
+	s:\.\./\.\./dcommon/gifs:img:;
+	s:\.\./\.\./dcommon/html::;
+	s/\.htm([^l])/.html\1/g;
+	print OUT "$_\n";
+}
+
+print OUT "|====================================================================\n";
+
+}
