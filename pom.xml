@@ -60,6 +60,7 @@
     </distributionManagement>
 
     <build>
+        <defaultGoal>generate-resources</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
