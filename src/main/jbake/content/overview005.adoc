@@ -32,7 +32,6 @@ Next] | 
 
 [[BNABO]]
 
-[[JEETT00309]]
 [[java-ee-containers]]
 1.5 Java EE Containers
 ----------------------
@@ -50,7 +49,6 @@ hand.
 
 [[BNABP]]
 
-[[JEETT00849]]
 [[container-services]]
 1.5.1 Container Services
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,7 +93,6 @@ link:overview008.html#BNACJ[Java EE 7 APIs]).
 
 [[BNABQ]]
 
-[[JEETT00850]]
 [[container-types]]
 1.5.2 Container Types
 ~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +100,6 @@ link:overview008.html#BNACJ[Java EE 7 APIs]).
 The deployment process installs Java EE application components in the
 Java EE containers, as illustrated in link:#BNABR[Figure 1-5].
 
-[[JEETT00005]]
 [[BNABR]]
 
 Figure 1-5 Java EE Server and Containers

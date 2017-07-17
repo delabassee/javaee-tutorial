@@ -32,7 +32,6 @@ Next] | 
 
 [[A1046550]]
 
-[[JEETT1340]]
 [[introduction-to-java-ee]]
 1.1 Introduction to Java EE
 ---------------------------

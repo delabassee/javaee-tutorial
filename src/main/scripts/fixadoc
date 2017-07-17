@@ -160,6 +160,7 @@ body_line:
 while (<STDIN>) {
 	s/\r?\n$//;
 	last body_line if (/\[width="66%",cols="50%,,50%",]/);
+	next body_line if (/^\[\[JEETT/);	# remove the "JEE" anchors
 	if (/^Beta Draft:/) {
 		<STDIN>;
 		next body_line;

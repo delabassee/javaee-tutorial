@@ -32,7 +32,6 @@ Next] | 
 
 [[BNADF]]
 
-[[JEETT00316]]
 [[glassfish-server-tools]]
 1.10 GlassFish Server Tools
 ---------------------------
@@ -54,7 +53,6 @@ Basic usage information for many of the tools appears throughout the
 tutorial. For detailed information, see the online help in the GUI
 tools.
 
-[[JEETT1346]]
 [[sthref13]][[BNADH]]
 
 Table 1-1 GlassFish Server Tools

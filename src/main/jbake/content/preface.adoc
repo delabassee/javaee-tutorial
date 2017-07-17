@@ -30,7 +30,6 @@ Next] | 
 |=======================================================================
 
 
-[[JEETT00063]]
 [[GEXAF]]
 
 [[preface]]
@@ -62,7 +61,6 @@ The following topics are addressed here:
 * link:#GKVTF[Conventions]
 * link:#GFIRK[Default Paths and File Names]
 
-[[JEETT1336]]
 [[CIACGIBD]]
 
 [[audience]]
@@ -74,7 +72,6 @@ deploying Java EE 7 applications. It covers the technologies comprising
 the Java EE platform and describes how to develop Java EE components and
 deploy them on the Java EE Software Development Kit (SDK).
 
-[[JEETT1337]]
 [[CIAHFICG]]
 
 [[documentation-accessibility]]
@@ -95,7 +92,6 @@ support through My Oracle Support. For information, visit
 `http://www.oracle.com/pls/topic/lookup?ctx=acc&id=trs` if you are
 hearing impaired.
 
-[[JEETT00301]]
 [[BNAAC]]
 
 [[before-you-read-this-book]]
@@ -107,7 +103,6 @@ of the Java programming language. A good way to get to that point is to
 work through the Java Tutorials
 (`http://docs.oracle.com/javase/tutorial/index.html`).
 
-[[JEETT00302]]
 [[GIPRL]]
 
 [[related-documentation]]
@@ -140,7 +135,6 @@ Samples are bundled with the Java EE Software Development Kit (SDK) and
 are also available from the GlassFish Samples project page at
 `https://glassfish-samples.java.net/`.
 
-[[JEETT00303]]
 [[GKVTF]]
 
 [[conventions]]
@@ -180,7 +174,6 @@ The command to remove a file is `rm` filename.
 
  +
 
-[[JEETT00304]]
 [[GFIRK]]
 
 [[default-paths-and-file-names]]

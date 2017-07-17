@@ -32,7 +32,6 @@ Next] | 
 
 [[BNAAY]]
 
-[[JEETT00308]]
 [[distributed-multitiered-applications]]
 1.4 Distributed Multitiered Applications
 ----------------------------------------
@@ -64,7 +63,6 @@ applications that run in this way extend the standard two-tiered
 client-and-server model by placing a multithreaded application server
 between the client application and back-end storage.
 
-[[JEETT00001]]
 [[BNAAZ]]
 
 Figure 1-1 Multitiered Applications
@@ -76,7 +74,6 @@ Applications"] +
 
 [[BNABA]]
 
-[[JEETT00843]]
 [[security]]
 1.4.1 Security
 ~~~~~~~~~~~~~~
@@ -97,7 +94,6 @@ variety of security environments without changing the source code.
 
 [[BNABB]]
 
-[[JEETT00844]]
 [[java-ee-components]]
 1.4.2 Java EE Components
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +121,6 @@ Java EE server.
 
 [[BNABC]]
 
-[[JEETT00845]]
 [[java-ee-clients]]
 1.4.3 Java EE Clients
 ~~~~~~~~~~~~~~~~~~~~~
@@ -135,7 +130,6 @@ client.
 
 [[BNABD]]
 
-[[JEETT00576]]
 [[web-clients]]
 1.4.3.1 Web Clients
 ^^^^^^^^^^^^^^^^^^^
@@ -156,7 +150,6 @@ reliability of Java EE server-side technologies.
 
 [[BNABF]]
 
-[[JEETT00577]]
 [[application-clients]]
 1.4.3.2 Application Clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,7 +171,6 @@ systems, clients, and non-Java languages.
 
 [[BNABE]]
 
-[[JEETT00578]]
 [[applets]]
 1.4.3.3 Applets
 ^^^^^^^^^^^^^^^
@@ -200,7 +192,6 @@ their jobs.
 
 [[BNABG]]
 
-[[JEETT00579]]
 [[the-javabeans-component-architecture]]
 1.4.3.4 The JavaBeans Component Architecture
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -224,7 +215,6 @@ architecture.
 
 [[BNABH]]
 
-[[JEETT00580]]
 [[java-ee-server-communications]]
 1.4.3.5 Java EE Server Communications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -235,7 +225,6 @@ the Java EE server either directly or, as in the case of a client
 running in a browser, by going through web pages or servlets running in
 the web tier.
 
-[[JEETT00002]]
 [[BNABI]]
 
 Figure 1-2 Server Communication
@@ -247,7 +236,6 @@ Communication"] +
 
 [[BNABJ]]
 
-[[JEETT00846]]
 [[web-components]]
 1.4.4 Web Components
 ~~~~~~~~~~~~~~~~~~~~
@@ -271,7 +259,6 @@ might include a JavaBeans component to manage the user input and send
 that input to enterprise beans running in the business tier for
 processing.
 
-[[JEETT00003]]
 [[BNABM]]
 
 Figure 1-3 Web Tier and Java EE Applications
@@ -283,7 +270,6 @@ Java EE Applications"] +
 
 [[BNABK]]
 
-[[JEETT00847]]
 [[business-components]]
 1.4.5 Business Components
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -297,7 +283,6 @@ the enterprise information system tier for storage. An enterprise bean
 also retrieves data from storage, processes it (if necessary), and sends
 it back to the client program.
 
-[[JEETT00004]]
 [[BNABN]]
 
 Figure 1-4 Business and EIS Tiers
@@ -309,7 +294,6 @@ EIS Tiers"] +
 
 [[BNABL]]
 
-[[JEETT00848]]
 [[enterprise-information-system-tier]]
 1.4.6 Enterprise Information System Tier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

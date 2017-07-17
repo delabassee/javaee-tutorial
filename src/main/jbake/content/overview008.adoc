@@ -32,7 +32,6 @@ Next] | 
 
 [[BNACJ]]
 
-[[JEETT00314]]
 [[java-ee-7-apis]]
 1.8 Java EE 7 APIs
 ------------------
@@ -40,7 +39,6 @@ Next] | 
 link:#BNACK[Figure 1-6] shows the relationships among the Java EE
 containers.
 
-[[JEETT00007]]
 [[BNACK]]
 
 Figure 1-6 Java EE Containers
@@ -53,7 +51,6 @@ Containers"] +
 link:#GJQMG[Figure 1-7] shows the availability of the Java EE 7 APIs in
 the web container.
 
-[[JEETT00008]]
 [[GJQMG]]
 
 Figure 1-7 Java EE APIs in the Web Container
@@ -66,7 +63,6 @@ in the Web Container"] +
 link:#GJQMN[Figure 1-8] shows the availability of the Java EE 7 APIs in
 the EJB container.
 
-[[JEETT00009]]
 [[GJQMN]]
 
 Figure 1-8 Java EE APIs in the EJB Container
@@ -79,7 +75,6 @@ in the EJB Container"] +
 link:#GJQNH[Figure 1-9] shows the availability of the Java EE 7 APIs in
 the application client container.
 
-[[JEETT00010]]
 [[GJQNH]]
 
 Figure 1-9 Java EE APIs in the Application Client Container
@@ -94,7 +89,6 @@ by the Java EE platform and the APIs used in Java EE applications.
 
 [[BNACL]]
 
-[[JEETT00859]]
 [[enterprise-javabeans-technology]]
 1.8.1 Enterprise JavaBeans Technology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +119,6 @@ specification.
 
 [[BNACM]]
 
-[[JEETT00860]]
 [[java-servlet-technology]]
 1.8.2 Java Servlet Technology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,7 +139,6 @@ The Java EE 7 platform requires Servlet 3.1.
 
 [[BNACP]]
 
-[[JEETT00861]]
 [[javaserver-faces-technology]]
 1.8.3 JavaServer Faces Technology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -186,7 +178,6 @@ Language 3.0.
 
 [[BNACN]]
 
-[[JEETT00862]]
 [[javaserver-pages-technology]]
 1.8.4 JavaServer Pages Technology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,7 +199,6 @@ technology in new applications.
 
 [[BNACO]]
 
-[[JEETT00863]]
 [[javaserver-pages-standard-tag-library]]
 1.8.5 JavaServer Pages Standard Tag Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -228,7 +218,6 @@ The Java EE 7 platform requires JSTL 1.2.
 
 [[BNADB]]
 
-[[JEETT00864]]
 [[java-persistence-api]]
 1.8.6 Java Persistence API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -248,7 +237,6 @@ The Java EE 7 platform requires Java Persistence API 2.1.
 
 [[BNACR]]
 
-[[JEETT00865]]
 [[java-transaction-api]]
 1.8.7 Java Transaction API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,7 +255,6 @@ The Java EE 7 platform requires Java Transaction API 1.2.
 
 [[GIRBT]]
 
-[[JEETT00866]]
 [[java-api-for-restful-web-services]]
 1.8.8 Java API for RESTful Web Services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -282,7 +269,6 @@ The Java EE 7 platform requires JAX-RS 2.0.
 
 [[GJXSD]]
 
-[[JEETT00867]]
 [[managed-beans]]
 1.8.9 Managed Beans
 ~~~~~~~~~~~~~~~~~~~
@@ -300,7 +286,6 @@ specification (JSR 342). The Java EE 7 platform requires Managed Beans
 
 [[GJXVO]]
 
-[[JEETT00868]]
 [[contexts-and-dependency-injection-for-java-ee]]
 1.8.10 Contexts and Dependency Injection for Java EE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -317,7 +302,6 @@ The Java EE 7 platform requires CDI 1.1.
 
 [[GJXVG]]
 
-[[JEETT00869]]
 [[dependency-injection-for-java]]
 1.8.11 Dependency Injection for Java
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -333,7 +317,6 @@ The Java EE 7 platform requires Dependency Injection for Java 1.0.
 
 [[GJXTY]]
 
-[[JEETT00870]]
 [[bean-validation]]
 1.8.12 Bean Validation
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -348,7 +331,6 @@ The Java EE 7 platform requires Bean Validation 1.1.
 
 [[BNACQ]]
 
-[[JEETT00871]]
 [[java-message-service-api]]
 1.8.13 Java Message Service API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -371,7 +353,6 @@ The Java EE 7 platform requires JMS 2.0.
 
 [[BNACZ]]
 
-[[JEETT00872]]
 [[java-ee-connector-architecture]]
 1.8.14 Java EE Connector Architecture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -399,7 +380,6 @@ The Java EE 7 platform requires Java EE Connector Architecture 1.7.
 
 [[BNACS]]
 
-[[JEETT00873]]
 [[javamail-api]]
 1.8.15 JavaMail API
 ~~~~~~~~~~~~~~~~~~~
@@ -418,7 +398,6 @@ The Java EE 7 platform requires JavaMail 1.5.
 
 [[GIRBE]]
 
-[[JEETT00874]]
 [[java-authorization-contract-for-containers]]
 1.8.16 Java Authorization Contract for Containers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -440,7 +419,6 @@ The Java EE 7 platform requires JACC 1.5.
 
 [[GIRGP]]
 
-[[JEETT00875]]
 [[java-authentication-service-provider-interface-for-containers]]
 1.8.17 Java Authentication Service Provider Interface for Containers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -462,7 +440,6 @@ The Java EE 7 platform requires JASPIC 1.1.
 
 [[CJAHDJBJ]]
 
-[[JEETT1341]]
 [[java-api-for-websocket]]
 1.8.18 Java API for WebSocket
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -478,7 +455,6 @@ platform requires Java API for WebSocket 1.0.
 
 [[CJAGIEEI]]
 
-[[JEETT1342]]
 [[java-api-for-json-processing]]
 1.8.19 Java API for JSON Processing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +470,6 @@ JSON-P 1.0.
 
 [[CJAFGFCJ]]
 
-[[JEETT1343]]
 [[concurrency-utilities-for-java-ee]]
 1.8.20 Concurrency Utilities for Java EE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -509,7 +484,6 @@ Java EE 7 platform requires Concurrency Utilities for Java EE 1.0.
 
 [[CJAJHGIH]]
 
-[[JEETT1344]]
 [[batch-applications-for-the-java-platform]]
 1.8.21 Batch Applications for the Java Platform
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

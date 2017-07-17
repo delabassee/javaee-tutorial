@@ -30,14 +30,12 @@ Next] | 
 |=======================================================================
 
 
-[[JEETT00064]]
 [[BNAAW]]
 
 [[overview]]
 1 Overview
 ----------
 
-[[JEETT1339]]
 
 This chapter introduces you to Java EE enterprise application
 development. Here you will review development basics, learn about the

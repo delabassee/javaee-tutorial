@@ -32,7 +32,6 @@ Next] | 
 
 [[BNABS]]
 
-[[JEETT00310]]
 [[web-services-support]]
 1.6 Web Services Support
 ------------------------
@@ -65,7 +64,6 @@ way.
 
 [[BNABT]]
 
-[[JEETT00851]]
 [[xml]]
 1.6.1 XML
 ~~~~~~~~~
@@ -91,7 +89,6 @@ application for processing.
 
 [[BNABU]]
 
-[[JEETT00852]]
 [[soap-transport-protocol]]
 1.6.2 SOAP Transport Protocol
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +112,6 @@ remote service and the resulting response
 
 [[BNABV]]
 
-[[JEETT00853]]
 [[wsdl-standard-format]]
 1.6.3 WSDL Standard Format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

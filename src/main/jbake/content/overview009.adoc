@@ -32,7 +32,6 @@ Next] | 
 
 [[GIRDR]]
 
-[[JEETT00315]]
 [[java-ee-7-apis-in-the-java-platform-standard-edition-7]]
 1.9 Java EE 7 APIs in the Java Platform, Standard Edition 7
 -----------------------------------------------------------
@@ -43,7 +42,6 @@ to Java EE applications.
 
 [[BNADA]]
 
-[[JEETT00876]]
 [[java-database-connectivity-api]]
 1.9.1 Java Database Connectivity API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,7 +63,6 @@ The Java SE 7 platform requires JDBC 4.1.
 
 [[BNADC]]
 
-[[JEETT00877]]
 [[java-naming-and-directory-interface-api]]
 1.9.2 Java Naming and Directory Interface API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +103,6 @@ naming context or in any of its direct or indirect subcontexts.
 
 [[BNACT]]
 
-[[JEETT00878]]
 [[javabeans-activation-framework]]
 1.9.3 JavaBeans Activation Framework
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,7 +115,6 @@ perform those operations.
 
 [[BNACU]]
 
-[[JEETT00879]]
 [[java-api-for-xml-processing]]
 1.9.4 Java API for XML Processing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,7 +135,6 @@ You can find information on the W3C schema at
 
 [[BNACW]]
 
-[[JEETT00880]]
 [[java-architecture-for-xml-binding]]
 1.9.5 Java Architecture for XML Binding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -156,7 +150,6 @@ The Java EE 7 platform requires JAXB 2.2.
 
 [[BNACV]]
 
-[[JEETT00882]]
 [[java-api-for-xml-web-services]]
 1.9.6 Java API for XML Web Services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +177,6 @@ The Java EE 7 platform requires JAX-WS 2.2.
 
 [[BNACX]]
 
-[[JEETT00881]]
 [[soap-with-attachments-api-for-java]]
 1.9.7 SOAP with Attachments API for Java
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -197,7 +189,6 @@ instead using the higher-level JAX-WS API.
 
 [[BNADD]]
 
-[[JEETT00883]]
 [[java-authentication-and-authorization-service]]
 1.9.8 Java Authentication and Authorization Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -210,7 +201,6 @@ JAAS is a Java programming language version of the standard Pluggable
 Authentication Module (PAM) framework, which extends the Java platform
 security architecture to support user-based authorization.
 
-[[JEETT1345]]
 [[sthref12]]
 
 [[common-annotations-for-the-java-platform]]
