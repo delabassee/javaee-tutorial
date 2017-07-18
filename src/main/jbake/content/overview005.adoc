@@ -4,15 +4,15 @@ title=Java EE Containers
 ~~~~~~
 Java EE Containers
 ==================
-2017-06-12T18:47:35Z
+2017-07-17T15:27:46Z
 
 [[top]]
 
 [width="100%",cols="50%,45%,^5%",]
 |=======================================================================
 |*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 7 Java Platform, Enterprise Edition* +
-E39031-02
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +
@@ -104,8 +104,8 @@ Java EE containers, as illustrated in link:#BNABR[Figure 1-5].
 
 Figure 1-5 Java EE Server and Containers
 
-image:img/jeett_dt_005.png[Description of Figure 1-5 follows] +
-link:img_text/jeett_dt_005.html[Description of "Figure 1-5 Java EE Server
+image:img/javaeett_dt_005.png[Description of Figure 1-5 follows] +
+link:img_text/javaeett_dt_005.html[Description of "Figure 1-5 Java EE Server
 and Containers"] +
  +
 
@@ -135,8 +135,8 @@ Previous] 
 Next]
 |
 |image:img/oracle.gif[Oracle Logo]
-link:/cpyr.html[ +
-Copyright © 2017, Oracle and/or its affiliates. All rights reserved.]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +

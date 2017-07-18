@@ -4,15 +4,15 @@ title=Distributed Multitiered Applications
 ~~~~~~
 Distributed Multitiered Applications
 ====================================
-2017-06-12T18:47:34Z
+2017-07-17T15:27:46Z
 
 [[top]]
 
 [width="100%",cols="50%,45%,^5%",]
 |=======================================================================
 |*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 7 Java Platform, Enterprise Edition* +
-E39031-02
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +
@@ -67,8 +67,8 @@ between the client application and back-end storage.
 
 Figure 1-1 Multitiered Applications
 
-image:img/jeett_dt_001.png[Description of Figure 1-1 follows] +
-link:img_text/jeett_dt_001.html[Description of "Figure 1-1 Multitiered
+image:img/javaeett_dt_001.png[Description of Figure 1-1 follows] +
+link:img_text/javaeett_dt_001.html[Description of "Figure 1-1 Multitiered
 Applications"] +
  +
 
@@ -229,8 +229,8 @@ the web tier.
 
 Figure 1-2 Server Communication
 
-image:img/jeett_dt_002.png[Description of Figure 1-2 follows] +
-link:img_text/jeett_dt_002.html[Description of "Figure 1-2 Server
+image:img/javaeett_dt_002.png[Description of Figure 1-2 follows] +
+link:img_text/javaeett_dt_002.html[Description of "Figure 1-2 Server
 Communication"] +
  +
 
@@ -263,8 +263,8 @@ processing.
 
 Figure 1-3 Web Tier and Java EE Applications
 
-image:img/jeett_dt_003.png[Description of Figure 1-3 follows] +
-link:img_text/jeett_dt_003.html[Description of "Figure 1-3 Web Tier and
+image:img/javaeett_dt_003.png[Description of Figure 1-3 follows] +
+link:img_text/javaeett_dt_003.html[Description of "Figure 1-3 Web Tier and
 Java EE Applications"] +
  +
 
@@ -287,8 +287,8 @@ it back to the client program.
 
 Figure 1-4 Business and EIS Tiers
 
-image:img/jeett_dt_004.png[Description of Figure 1-4 follows] +
-link:img_text/jeett_dt_004.html[Description of "Figure 1-4 Business and
+image:img/javaeett_dt_004.png[Description of Figure 1-4 follows] +
+link:img_text/javaeett_dt_004.html[Description of "Figure 1-4 Business and
 EIS Tiers"] +
  +
 
@@ -315,8 +315,8 @@ Previous] 
 Next]
 |
 |image:img/oracle.gif[Oracle Logo]
-link:/cpyr.html[ +
-Copyright © 2017, Oracle and/or its affiliates. All rights reserved.]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +

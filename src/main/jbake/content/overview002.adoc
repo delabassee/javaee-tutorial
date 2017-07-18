@@ -4,15 +4,15 @@ title=Java EE 7 Platform Highlights
 ~~~~~~
 Java EE 7 Platform Highlights
 =============================
-2017-06-12T18:47:34Z
+2017-07-17T15:27:46Z
 
 [[top]]
 
 [width="100%",cols="50%,45%,^5%",]
 |=======================================================================
 |*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 7 Java Platform, Enterprise Edition* +
-E39031-02
+*Release 8 Java Platform, Enterprise Edition* +
+E63026-01
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +
@@ -44,10 +44,14 @@ Plain Old Java Objects (POJOs), and simplified packaging. The Java EE 7
 platform includes the following new features:
 
 * New technologies, including the following:
+
 ** link:overview008.html#CJAJHGIH[Batch Applications for the Java
 Platform]
+
 ** link:overview008.html#CJAFGFCJ[Concurrency Utilities for Java EE]
+
 ** link:overview008.html#CJAGIEEI[Java API for JSON Processing] (JSON-P)
+
 ** link:overview008.html#CJAHDJBJ[Java API for WebSocket]
 * New features for EJB components (see
 link:overview008.html#BNACL[Enterprise JavaBeans Technology] for details)
@@ -68,8 +72,8 @@ Previous] 
 Next]
 |
 |image:img/oracle.gif[Oracle Logo]
-link:/cpyr.html[ +
-Copyright © 2017, Oracle and/or its affiliates. All rights reserved.]
+link:cpyr.html[ +
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
 |
 |link:toc.html[image:img/toc.gif[Go To Table Of
 Contents] +

@@ -55,15 +55,24 @@ if ($#ARGV >= 0) {
 		} else {
 			$out = $arg;
 			$out =~ s/(\.[a-z]*)?$/.adoc/;
+			$inplace = 0;
 			if ($out eq $arg) {
+				$inplace = 1;
 				$out = $arg . "+";
 			}
 			if (!open(OUT, ">" . $out)) {
 				printf "%s: can not write\n", $out;
 			} else {
-				&fixadoc($arg);
+				$stat = &fixadoc($arg);
 				close(OUT);
 				close(STDIN);
+				if ($stat) {
+					if ($inplace) {
+						rename($out, $arg);
+					}
+				} else {
+					unlink($out);
+				}
 			}
 		}
 	}
@@ -75,17 +84,29 @@ sub fixadoc {
 
 local($title);
 local($saw_copyright) = 0;
+local($img_text) = 0;
 
 # read the title line(s)
 
 title_line:
 while (<STDIN>) {
 	s/\r?\n$//;
+	if (/type=page/) {
+		printf "%s: already fixed\n", $arg;
+		return 0;
+	}
 	last title_line if (/^=/);
 	$title = $title . $_ . ' ';
 }
 
 $title =~ s/ $//;
+
+if ($title =~ /\.eps$/) {
+	$img_text = 1;
+	$title =~ s/\.eps//;
+	$title =~ s/jeett/javaeett/;
+	$_ =~ s/=//;
+}
 
 # print the jekyl header
 
@@ -95,6 +116,20 @@ print OUT "title=$title\n";
 print OUT "~~~~~~\n";
 print OUT "$title\n";
 print OUT "$_\n";
+
+# if this is an img_text file, handle it specially
+
+if ($img_text) {
+	while (<STDIN>) {
+		s/\r?\n$//;
+		s/jeett_dt_/javaeett_dt_/g;
+		s:\.\./\.\./dcommon/gifs:img:;
+		s:\.\./\.\./dcommon/html/::;
+		s/\.htm([^l])/.html\1/g;
+		print OUT "$_\n";
+	}
+	return 1;
+}
 
 # read everything before the first header table
 
@@ -107,6 +142,7 @@ while (<STDIN>) {
 		next preheader_line;
 	}
 	s:\.\./\.\./dcommon/gifs:img:;
+	s:\.\./\.\./dcommon/html/::;
 	s/\.htm([^l])/.html\1/g;
 	print OUT "$_\n";
 }
@@ -130,6 +166,7 @@ while (<STDIN>) {
 	s/ a\|//;
 	s/\|.*\|/|/;
 	s:\.\./\.\./dcommon/gifs:img:;
+	s:\.\./\.\./dcommon/html/::;
 	s/\.htm([^l])/.html\1/g;
 	print OUT "$_\n";
 }
@@ -150,11 +187,17 @@ while (<STDIN>) {
 	s/ a\|//;
 	s/\|.*\|/|/;
 	s:\.\./\.\./dcommon/gifs:img:;
+	s:\.\./\.\./dcommon/html/::;
 	s/\.htm([^l])/.html\1/g;
 	print OUT "$_\n";
 }
 
 # read lines of the body until we get to the footer table
+
+local($len) = 0;
+local($table_boundary) = 0;
+local($table_end) = 0;
+local($plus_line) = 0;
 
 body_line:
 while (<STDIN>) {
@@ -165,8 +208,58 @@ while (<STDIN>) {
 		<STDIN>;
 		next body_line;
 	}
+	if (/^-{5,}/) {
+		if (length != $len) {
+			printf "%s: %d: WARNING, bad table?\n", $arg, $.;
+			print OUT "UNWRAP\n";
+		}
+	}
+	if (/^~{5,}/) {
+		if (length == $len - 1) {
+			$_ = $_ . "~";	# fix it
+		} elsif (length != $len) {
+			printf "%s: %d: WARNING, bad section title?\n", $arg, $.;
+			print OUT "UNWRAP\n";
+		}
+	}
+	# a table followed by a line with just " +"
+	if ($table_end) {
+		$table_end = 0;
+		if (/^ \+$/) {
+			next body_line;
+		}
+	} elsif ($table_boundary) {
+		$table_boundary = 0;
+		if (/^$/) {
+			$table_end = 1;
+		} else {
+			$table_end = 0;
+		}
+	} elsif (/^\|={5,}/) {
+		$table_boundary = 1;
+	}
+	# a line with just "+" followed by a line with just " +"
+	if ($plus_line) {
+		$plus_line = 0;
+		if (/^ \+$/) {
+			next body_line;
+		}
+	} elsif (/^\+$/) {
+		$plus_line = 1;
+	} else {
+		$table_boundary = 0;
+		$table_end = 0;
+		$plus_line = 0;
+	}
+	# a sub-bullet not preceded by a blank line
+	if (/^\*\* / && $len != 0) {
+		print OUT "\n";
+	}
+	s/jeett_dt_/javaeett_dt_/g;
 	s:\.\./\.\./dcommon/gifs:img:;
+	s:\.\./\.\./dcommon/html/::;
 	s/\.htm([^l])/.html\1/g;
+	$len = length;
 	print OUT "$_\n";
 }
 
@@ -192,7 +285,8 @@ while (<STDIN>) {
 		next footer_line;
 	}
 	if (/^Copyright/) {
-		print OUT "Copyright © 2017, Oracle and/or its affiliates. All rights reserved.]\n";
+		<STDIN>;
+		print OUT "Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]\n";
 		$saw_copyright = 1;
 		next footer_line;
 	}
@@ -204,11 +298,12 @@ while (<STDIN>) {
 	s/^\|.*\|/|/;
 	s/^ \|/|/;
 	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html::;
+	s:\.\./\.\./dcommon/html/::;
 	s/\.htm([^l])/.html\1/g;
 	print OUT "$_\n";
 }
 
 print OUT "|====================================================================\n";
 
+return 1;	# success
 }
