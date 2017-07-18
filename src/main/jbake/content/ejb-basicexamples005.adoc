@@ -125,7 +125,6 @@ of the month). For example: `dayOfMonth="–3"`.
  |A four-digit calendar year. For example: `year="2011"`.
 |=======================================================================
 
- +
 
 [[GIQMX]]
 
@@ -663,7 +662,6 @@ to virtual machine constraints.
 
 |=======================================================================
 
- +
 
 [[BNBPF]]
 

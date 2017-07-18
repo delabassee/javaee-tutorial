@@ -144,7 +144,6 @@ enterprise bean.
 
 |=======================================================================
 
- +
 * `JMSContext.DUPS_OK_ACKNOWLEDGE`: This option instructs the
 `JMSContext` to lazily acknowledge the delivery of messages. This is
 likely to result in the delivery of some duplicate messages if the JMS

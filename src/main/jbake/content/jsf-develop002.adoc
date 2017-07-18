@@ -121,7 +121,6 @@ is available
 `List` can be any of the standard types
 |=======================================================================
 
- +
 
 When they bind components to properties by using the `value` attributes
 of the component tags, page authors need to ensure that the

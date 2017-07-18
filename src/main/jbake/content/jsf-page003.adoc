@@ -60,7 +60,6 @@ submitted
 component
 |=======================================================================
 
- +
 
 link:#GKVYY[Table 10-9] lists the data-conversion core tags.
 
@@ -80,7 +79,6 @@ component
 component
 |=======================================================================
 
- +
 
 link:#GKVZG[Table 10-10] lists the facet core tags.
 
@@ -97,7 +95,6 @@ its enclosing tag
 |`f:metadata` |Registers a `facet` on a parent component
 |=======================================================================
 
- +
 
 link:#GKVZA[Table 10-11] lists the core tags that represent items in a
 list.
@@ -113,7 +110,6 @@ Table 10-11 Core Tags That Represent Items in a List
 |`f:selectItems` |Represents a set of items
 |======================================================
 
- +
 
 link:#GKVYV[Table 10-12] lists the validator core tags.
 
@@ -140,7 +136,6 @@ Table 10-12 Validator Core Tags
 |`f:validateRequired` |Enforces the presence of a value in a component
 |=======================================================================
 
- +
 
 link:#GKVYU[Table 10-13] lists the core tags that fall into other
 categories.
@@ -168,7 +163,6 @@ group of components based on placement
 a component
 |=======================================================================
 
- +
 
 These tags, which are used in conjunction with component tags, are
 explained in other sections of this tutorial.
@@ -231,7 +225,6 @@ Technology"]
 
 |=======================================================================
 
- +
 
 '''''
 

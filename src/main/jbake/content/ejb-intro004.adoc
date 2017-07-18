@@ -50,7 +50,6 @@ define client access.
 
 |=======================================================================
 
- +
 
 Clients access enterprise beans either through a no-interface view or
 through a business interface. A no-interface view of an enterprise bean

@@ -160,7 +160,6 @@ the URL mapping for the application. The path specified by
 `@ApplicationPath` to a subclass of `javax.ws.rs.core.Application`.
 |=======================================================================
 
- +
 
 [[GILQB]]
 
@@ -375,7 +374,6 @@ The value of the `name3` variable is an empty string.
 
 |====================================================
 
- +
 
 [[sthref136]][[GIPYM]]
 
@@ -395,7 +393,6 @@ Table 29-2 Examples of URI Path Templates
 |`http://example.com/{name3}/home/` |`http://example.com//home/`
 |=======================================================================
 
- +
 
 [[GIPYS]]
 
@@ -542,7 +539,6 @@ media types (`text/xml`, `application/xml`, and `application/*+xml`)
 |`StreamingOutput` |All media types (`*/*`), `MessageBodyWriter` only
 |=======================================================================
 
- +
 
 The following example shows how to use `MessageBodyReader` with the
 `@Consumes` and `@Provider` annotations:

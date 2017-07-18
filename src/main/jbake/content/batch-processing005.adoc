@@ -104,7 +104,6 @@ steps. It is referenced from the `writer` element inside the `chunk`
 element.
 |=======================================================================
 
- +
 
 [[sthref278]][[BCGEAAEA]]
 
@@ -135,7 +134,6 @@ final results from each partition. It is referenced from the `analyzer`
 element inside the `partition` element.
 |=======================================================================
 
- +
 
 [[sthref279]][[BCGCAEDI]]
 
@@ -197,7 +195,6 @@ skippable exception handling for item writers in chunk steps. It is
 referenced from the `listener` element inside the `step` element.
 |=======================================================================
 
- +
 
 [[BCGIFJBB]]
 
@@ -278,7 +275,6 @@ context objects from the batch runtime in batch artifacts.
 
 |=======================================================================
 
- +
 
 You may encounter the following errors if you do not follow this
 procedure.
@@ -352,7 +348,6 @@ your application submits the job.
 
 |=======================================================================
 
- +
 
 '''''
 

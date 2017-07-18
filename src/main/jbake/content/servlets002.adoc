@@ -111,7 +111,6 @@ components |`javax.servlet.ServletRequestListener` and
 `ServletRequestAttributeEvent`
 |=======================================================================
 
- +
 
 Use the `@WebListener` annotation to define a listener to get events for
 various operations on the particular web application context. Classes

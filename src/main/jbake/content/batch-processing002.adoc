@@ -210,7 +210,6 @@ Table 55-1 Batch Status Values
 |`ABANDONED` |The job was marked abandoned.
 |============================================================
 
- +
 
 Java EE applications can submit jobs and access the batch status of a
 job using the `JobOperator` interface, as described in

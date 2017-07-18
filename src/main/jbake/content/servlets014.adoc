@@ -120,7 +120,6 @@ with the returned stream to implement the new protocol.
 
 |=======================================================================
 
- +
 
 The following code demonstrates how to accept an HTTP protocol upgrade
 request from a client:

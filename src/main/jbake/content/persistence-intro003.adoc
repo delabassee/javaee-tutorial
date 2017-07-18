@@ -221,7 +221,6 @@ types. This element is ignored for non-`String` discriminator types. The
 default is 31. This element is optional.
 |=======================================================================
 
- +
 
 The `javax.persistence.DiscriminatorType` enumerated type is used to set
 the type of the discriminator column in the database by setting the

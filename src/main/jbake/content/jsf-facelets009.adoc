@@ -139,7 +139,6 @@ Table 8-4 How Facelets Renders HTML5 Elements
 |`textarea` | + |`h:inputTextArea`
 |=======================================================
 
- +
 
 [[sthref35]]
 

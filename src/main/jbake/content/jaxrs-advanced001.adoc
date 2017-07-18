@@ -66,7 +66,6 @@ content type is `application/x-www-form-urlencoded`
 |`@QueryParam` |Extracts the value of a URI query parameter
 |=======================================================================
 
- +
 
 [[GKKYA]]
 

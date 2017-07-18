@@ -182,7 +182,7 @@ Specifies the name `showcart`.
 [[GLQDX]]
 
 [[custom-components-and-other-custom-objects-used-in-dukes-bookstore]]
-57.2.4 Custom Components and Other Custom Objects Used in Duke'sBookstore
+57.2.4 Custom Components and Other Custom Objects Used in Duke's Bookstore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The map and area custom components for Duke's Bookstore, along with

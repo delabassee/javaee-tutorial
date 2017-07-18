@@ -70,7 +70,6 @@ are not portable across Java EE servers.
 
 |=======================================================================
 
- +
 
 Interceptor methods within the target class or in an interceptor class
 are annotated with one of the metadata annotations defined in
@@ -101,7 +100,6 @@ interceptor method for post-construct lifecycle events
 method for pre-destroy lifecycle events
 |=======================================================================
 
- +
 
 [[GKECK]]
 

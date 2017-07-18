@@ -93,7 +93,6 @@ applications.
 |`NONE` |No additional locking will occur on the data in the database.
 |=======================================================================
 
- +
 
 [[GKJIK]]
 
@@ -210,7 +209,6 @@ value of `javax.persistence.lock.timeout` is a hint, not a contract.
 
 |=======================================================================
 
- +
 
 This property may be set programmatically by passing it to the
 `EntityManager` methods that allow lock modes to be specified, the

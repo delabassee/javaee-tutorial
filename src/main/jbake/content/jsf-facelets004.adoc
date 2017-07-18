@@ -84,7 +84,6 @@ or `h:dataTable.`
 |`ui:remove` |Removes content from a page.
 |=======================================================================
 
- +
 
 For more information on Facelets templating tags, see the
 olink:JSFTL[JavaServer Faces Facelets Tag Library documentation].

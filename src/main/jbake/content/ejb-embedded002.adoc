@@ -62,7 +62,6 @@ descriptor, with the same overriding rules for the enterprise bean
 container in Java EE servers.
 |=======================================================================
 
- +
 
 Container providers are allowed to support the full set of features in
 enterprise beans, but applications that use the embedded container will

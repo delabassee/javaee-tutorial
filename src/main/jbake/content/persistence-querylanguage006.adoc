@@ -96,7 +96,6 @@ keywords are not case-sensitive.
 or a line feed.
 |=======================================================================
 
- +
 
 [[BNBUI]]
 
@@ -941,7 +940,6 @@ Table 39-2 Query Language Order Precedence
 
 |==================================
 
- +
 
 [[BNBVE]]
 
@@ -1039,7 +1037,6 @@ Table 39-3 LIKE Expression Examples
 
 |============================================================
 
- +
 
 [[BNBVI]]
 
@@ -1215,7 +1212,6 @@ Table 39-4 String Expressions
 |`UPPER(String)` |`String`
 |==============================================================
 
- +
 
 The `CONCAT` function concatenates two strings into one string.
 
@@ -1262,7 +1258,6 @@ Table 39-5 Arithmetic Expressions
 |`SIZE(Collection)` |`int`
 |==========================================
 
- +
 
 The `ABS` function takes a numeric expression and returns a number of
 the same type as the argument.
@@ -1290,7 +1285,6 @@ Table 39-6 Date/Time Expressions
 |`CURRENT_TIMESTAMP` |`java.sql.Timestamp`
 |=========================================
 
- +
 
 [[GJJND]]
 
@@ -1374,7 +1368,6 @@ Table 39-7 AND Operator Logic
 |U |U |F |U
 |============
 
- +
 
 [[sthref174]][[BNBVT]]
 
@@ -1388,7 +1381,6 @@ Table 39-8 OR Operator Logic
 |U |T |U |U
 |===========
 
- +
 
 [[BNBVU]]
 
@@ -1429,7 +1421,6 @@ Table 39-9 NOT Operator Logic
 |U |U
 |================
 
- +
 
 [[sthref176]][[BNBVW]]
 
@@ -1443,7 +1434,6 @@ Table 39-10 Conditional Test
 |Expression is unknown |F |F |T
 |==============================
 
- +
 
 [[BNBVX]]
 
@@ -1529,7 +1519,6 @@ set
  |Returns the sum of all the values in the result set
 |=======================================================================
 
- +
 
 For select method queries with an aggregate function (`AVG`, `COUNT`,
 `MAX`, `MIN`, or `SUM`) in the `SELECT` clause, the following rules

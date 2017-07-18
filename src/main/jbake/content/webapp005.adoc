@@ -255,7 +255,6 @@ Table 6-1 Web Components That Accept Resource Injections
 |Managed beans |Plain Old Java Objects
 |================================================
 
- +
 
 [[BNAEW]]
 

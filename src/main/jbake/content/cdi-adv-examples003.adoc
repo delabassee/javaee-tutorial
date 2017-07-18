@@ -33,7 +33,7 @@ Next] | 
 [[GKHPY]]
 
 [[the-producermethods-example-using-a-producer-method-to-choose-a-bean-implementation]]
-26.3 The producermethods Example: Using a Producer Method to Choose aBean Implementation
+26.3 The producermethods Example: Using a Producer Method to Choose a Bean Implementation
 -----------------------------------------------------------------------------------------
 
 The `producermethods` example shows how to use a producer method to

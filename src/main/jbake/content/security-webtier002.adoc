@@ -223,7 +223,6 @@ transport guarantee values identically.
 
 |=======================================================================
 
- +
 
 The user data constraint is handy to use in conjunction with basic and
 form-based user authentication. When the login authentication method is
@@ -260,7 +259,6 @@ easily implemented by using a filter.
 
 |=======================================================================
 
- +
 
 [[BNCBL]]
 
@@ -473,7 +471,7 @@ validate received authenticators by calculating the expected digest.
 [[BNCBN]]
 
 [[specifying-an-authentication-mechanism-in-the-deployment-descriptor]]
-48.2.4 Specifying an Authentication Mechanism in the DeploymentDescriptor
+48.2.4 Specifying an Authentication Mechanism in the Deployment Descriptor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To specify an authentication mechanism, use the `login-config` element.
@@ -501,7 +499,6 @@ Programmatically].
 
 |=======================================================================
 
- +
 
 When you try to access a web resource that is constrained by a
 `security-constraint` element, the web container activates the

@@ -70,7 +70,6 @@ conversations are scoped to a particular HTTP servlet session and may
 not cross session boundaries.
 |=======================================================================
 
- +
 
 The first three scopes are defined by both JSR 346 and the JavaServer
 Faces specification. The last two are defined by JSR 346.

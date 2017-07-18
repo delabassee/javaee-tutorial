@@ -77,7 +77,6 @@ information on how to manage page navigation.
 
 |=======================================================================
 
- +
 
 [[BNAUU]]
 

@@ -126,7 +126,6 @@ Table 15-3 Examples of Value-Binding Expressions
 |A property of an object in an array of objects |`books[3].price`
 |=======================================================================
 
- +
 
 The next two sections explain how to use the `value` attribute to bind a
 component's value to a bean property or other data objects and how to
@@ -294,7 +293,6 @@ keyed by attribute name
 the `FacesRequest` for this request
 |=======================================================================
 
- +
 
 [[BNATL]]
 

@@ -58,7 +58,6 @@ posts the request to the JavaServer Faces lifecycle.
 
 |=======================================================================
 
- +
 
 The following topics are addressed here:
 
@@ -107,7 +106,6 @@ not have the `on` prefix.
 
 |=======================================================================
 
- +
 
 For a command button, the default event is `click`, so you do not
 actually need to specify `event="click"` to obtain the desired behavior.

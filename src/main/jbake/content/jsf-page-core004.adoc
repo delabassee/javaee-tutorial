@@ -61,7 +61,6 @@ on the component's value
 value-change events
 |=======================================================================
 
- +
 
 Only components that implement `ActionSource` can use the `action` and
 `actionListener` attributes. Only components that implement

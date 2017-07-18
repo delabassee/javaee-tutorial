@@ -33,7 +33,7 @@ Next] | 
 [[GKGKV]]
 
 [[using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications]]
-25.3 Using Producer Methods, Producer Fields, and Disposer Methods inCDI Applications
+25.3 Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
 --------------------------------------------------------------------------------------
 
 A producer method generates an object that can then be injected.

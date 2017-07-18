@@ -172,7 +172,6 @@ The command to remove a file is `rm` filename.
 
 |=======================================================================
 
- +
 
 [[GFIRK]]
 
@@ -216,7 +215,6 @@ Update Tool. |as-install-parent`/docs/javaee-tutorial`
 is stored. |as-install`/domains/domain1`
 |=======================================================================
 
- +
 
 '''''
 

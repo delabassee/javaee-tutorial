@@ -33,7 +33,7 @@ Next] | 
 [[GJIVM]]
 
 [[using-the-criteria-api-and-metamodel-api-to-create-basic-typesafe-queries]]
-40.3 Using the Criteria API and Metamodel API to Create Basic TypesafeQueries
+40.3 Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
 ------------------------------------------------------------------------------
 
 The basic semantics of a Criteria query consists of a `SELECT` clause, a
@@ -263,7 +263,6 @@ Table 40-1 Conditional Methods in the Expression Interface
 |`in` |Tests whether an expression is within a list of values
 |============================================================
 
- +
 
 The following query uses the `Expression.isNull` method to find all pets
 where the `color` attribute is null:
@@ -328,7 +327,6 @@ third expression in value
 |`like` |Tests whether the expression matches a given pattern
 |=======================================================================
 
- +
 
 The following code uses the `CriteriaBuilder.equal` method:
 
@@ -385,7 +383,6 @@ Table 40-3 Compound Predicate Methods in the CriteriaBuilder Interface
 |`not` |A logical negation of the given Boolean expression
 |=========================================================
 
- +
 
 The following code shows the use of compound predicates in queries:
 

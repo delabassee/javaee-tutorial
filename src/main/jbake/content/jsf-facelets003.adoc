@@ -33,7 +33,7 @@ Next] | 
 [[GIPOB]]
 
 [[developing-a-simple-facelets-application-the-guessnumber-jsf-example-application]]
-8.3 Developing a Simple Facelets Application: The guessnumber-jsfExample Application
+8.3 Developing a Simple Facelets Application: The guessnumber-jsf Example Application
 -------------------------------------------------------------------------------------
 
 This section describes the general steps involved in developing a

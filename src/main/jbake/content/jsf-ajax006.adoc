@@ -70,7 +70,6 @@ Table 13-4 Valid Error Values for the Data Object status Property
 |`serverError` |The Ajax response contains an `error` element.
 |=======================================================================
 
- +
 
 In the following example, any errors that occurred in processing the
 Ajax request are handled by the `handlemyajaxerror` JavaScript function:

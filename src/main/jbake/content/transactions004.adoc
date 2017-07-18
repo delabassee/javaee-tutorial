@@ -246,7 +246,6 @@ Transaction
 |`Never` |T1 |Error
 |=======================================================================
 
- +
 
 [[BNCIU]]
 
@@ -285,7 +284,6 @@ Table 51-2 TransactionAttributeType Constants
 |`Never` |`TransactionAttributeType.NEVER`
 |========================================================
 
- +
 
 The following code snippet demonstrates how to use the
 `@TransactionAttribute` annotation:

@@ -63,7 +63,6 @@ provider that does not implement a second-level cache.
 
 |=======================================================================
 
- +
 
 Alternatively, you can specify the shared cache mode by setting the
 `javax.persistence.sharedCache.mode` property to one of the shared cache
@@ -182,7 +181,6 @@ data being read from the database, not the cache.
 
 |=======================================================================
 
- +
 
 To set the retrieval or store mode when using queries, call the
 `Query.setHint` or `TypedQuery.setHint` methods, depending on the type
@@ -246,7 +244,6 @@ always return `false`.
 
 |=======================================================================
 
- +
 
 [[GKJDZ]]
 

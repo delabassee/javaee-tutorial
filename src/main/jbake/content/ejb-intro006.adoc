@@ -52,7 +52,6 @@ Table 32-2 Naming Conventions for Enterprise Beans
 |Business interface |name |`Account`
 |================================================
 
- +
 
 '''''
 

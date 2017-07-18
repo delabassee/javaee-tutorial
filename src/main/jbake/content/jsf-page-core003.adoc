@@ -72,7 +72,6 @@ component is a match against a regular expression from the
 is not empty on an `EditableValueHolder` component.
 |=======================================================================
 
- +
 
 All of these validator classes implement the `Validator` interface.
 Component writers and application developers can also implement this

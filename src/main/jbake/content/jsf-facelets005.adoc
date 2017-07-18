@@ -99,7 +99,6 @@ is nested exposes an implementation of `ActionSource2` suitable for use
 as the target of attached objects in the using page.
 |=======================================================================
 
- +
 
 For more information and a complete list of Facelets composite tags, see
 the olink:JSFTL[JavaServer Faces Facelets Tag Library documentation].

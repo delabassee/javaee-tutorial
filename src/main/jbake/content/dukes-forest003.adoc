@@ -48,7 +48,7 @@ Application Using Maven"]
 [[CHDJDIFH]]
 
 [[to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide]]
-59.3.1 To Build and Deploy the Duke's Forest Application Using NetBeansIDE
+59.3.1 To Build and Deploy the Duke's Forest Application Using NetBeans IDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1.  Make sure that GlassFish Server has been started (see

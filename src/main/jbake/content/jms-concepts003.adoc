@@ -216,7 +216,6 @@ session.
 
 |=======================================================================
 
- +
 
 You normally create a connection by creating a `JMSContext` object. See
 link:#BABGDFEA[JMSContext Objects] for details.
@@ -825,7 +824,6 @@ application
 provider prior to delivery
 |=======================================================================
 
- +
 
 [[BNCEV]]
 
@@ -886,7 +884,6 @@ language.
 message type is useful when a message body is not required.
 |=======================================================================
 
- +
 
 The JMS API provides methods for creating messages of each type and for
 filling in their contents. For example, to create and send a

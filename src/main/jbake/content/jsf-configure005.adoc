@@ -216,7 +216,6 @@ Values
 JavaServer Faces EL expression
 |=======================================================================
 
- +
 
 link:#BNAWR[Using the managed-bean Element] includes an example of
 initializing an `int` property (a primitive type) using the `value`
@@ -513,7 +512,6 @@ Table 16-2 Allowable Connections between Scoped Objects
 |`view` |`none`, `application`, `session`, `view`
 |==============================================================
 
- +
 
 Be sure not to allow cyclical references between objects. For example,
 neither of the `AddressBean` objects in the preceding example should

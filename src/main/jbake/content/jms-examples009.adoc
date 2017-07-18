@@ -136,7 +136,7 @@ Bean Application: Client to Message-Driven Beans to Entity"] +
 [[BNCHI]]
 
 [[writing-the-application-components-for-the-clientmdbentity-example]]
-46.9.2 Writing the Application Components for the clientmdbentityExample
+46.9.2 Writing the Application Components for the clientmdbentity Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Writing the components of the application involves coding the

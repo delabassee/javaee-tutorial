@@ -101,7 +101,6 @@ are subtypes of `JsonValue`.
 processing.
 |=======================================================================
 
- +
 
 [[sthref118]][[CHDIHCEG]]
 
@@ -116,7 +115,6 @@ from a stream or from an object model.
 |`JsonGenerator` |Writes JSON data to a stream one element at a time.
 |=======================================================================
 
- +
 
 '''''
 

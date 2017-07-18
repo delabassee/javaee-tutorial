@@ -293,7 +293,6 @@ target instance.
 
 |=======================================================================
 
- +
 
 `@AroundConstruct` methods must call `Invocation.proceed` in order to
 create the target instance. If an `@AroundConstruct` method does not
@@ -526,7 +525,6 @@ implementation-specific.
 
 |=======================================================================
 
- +
 
 The `javax.interceptor.Interceptor.Priority` class defines the priority
 constants listed in link:#BABFBAEF[Table 54-2].
@@ -558,7 +556,6 @@ libraries should use the range between `LIBRARY_AFTER` and
 EE Platform should have values higher than `PLATFORM_AFTER`.
 |=======================================================================
 
- +
 
  +
 
@@ -572,7 +569,6 @@ for future use, and should not be used.
 
 |=======================================================================
 
- +
 
 The following code snippet shows how to use the priority constants in an
 application-defined interceptor:

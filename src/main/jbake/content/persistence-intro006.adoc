@@ -105,7 +105,6 @@ the provider will create the database artifacts on deployment.
 deployment.
 |=======================================================================
 
- +
 
 In this example, the persistence provider will delete any remaining
 database artifacts and then create the artifacts when the application is
@@ -146,7 +145,6 @@ then the object/relational metadata to create and delete the database
 artifacts.
 |=======================================================================
 
- +
 
 In this example, the persistence provider will use a script packaged
 within the application to create the database artifacts:

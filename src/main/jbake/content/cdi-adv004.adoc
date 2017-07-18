@@ -87,7 +87,6 @@ Table 25-1 Injection of Predefined Beans
 |`ServletContext` |CDI bean |`@Inject ServletContext context;`
 |=====================================================================
 
- +
 
 Predefined beans are injected with dependent scope and the predefined
 default qualifier `@Default`.

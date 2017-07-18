@@ -74,7 +74,6 @@ Table 16-3 Common Outcome Strings
 again.
 |=======================================================================
 
- +
 
 Usually, the action method performs some processing on the form data of
 the current page. For example, the method might check whether the user

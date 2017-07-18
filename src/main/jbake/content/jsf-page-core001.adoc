@@ -72,7 +72,6 @@ Table 11-1 Converter Classes and Converter IDs
 |`ShortConverter` |`javax.faces.Short`
 |======================================================
 
- +
 
 A standard error message is associated with each of these converters. If
 you have registered one of these converters onto a component on your
@@ -269,7 +268,6 @@ date, a time, or both. Valid values are `date`, `time`, or `both`. If no
 value is specified, `date` is used.
 |=======================================================================
 
- +
 
 [[BNASX]]
 
@@ -367,7 +365,6 @@ formatted as a `number`, `currency`, or `percentage`. If not specified,
 `number` is used.
 |=======================================================================
 
- +
 
 '''''
 

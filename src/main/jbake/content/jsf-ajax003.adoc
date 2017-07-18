@@ -129,7 +129,6 @@ a `Collection` of `String` objects. If not specified, the default value
 is `@none`.
 |=======================================================================
 
- +
 
 The keywords listed in link:#GKNLK[Table 13-2] can be used with the
 `execute` and `render` attributes of the `f:ajax` tag.
@@ -147,7 +146,6 @@ Table 13-2 Execute and Render Keywords
 |`@this` |The element that triggered the request
 |===============================================
 
- +
 
 Note that when you use the `f:ajax` tag in a Facelets page, the
 JavaScript resource library is loaded implicitly. This resource library

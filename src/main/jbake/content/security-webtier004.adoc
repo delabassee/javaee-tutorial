@@ -303,7 +303,7 @@ The application responds by saying "Hello" to the name you entered.
 [[BNCBY]]
 
 [[the-hello1-formauth-example-form-based-authentication-with-a-javaserver-faces-application]]
-48.4.4 The hello1-formauth Example: Form-Based Authentication with aJavaServer Faces Application
+48.4.4 The hello1-formauth Example: Form-Based Authentication with a JavaServer Faces Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example explains how to use form-based authentication with a

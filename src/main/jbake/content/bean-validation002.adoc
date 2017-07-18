@@ -163,7 +163,6 @@ String briefMessage;
 
 |=======================================================================
 
- +
 
 In the following example, a constraint is placed on a field using the
 built-in `@NotNull` constraint:

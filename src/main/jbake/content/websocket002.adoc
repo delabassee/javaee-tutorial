@@ -73,7 +73,6 @@ a programmatic endpoint, but it focuses on annotated endpoints.
 
 |=======================================================================
 
- +
 
 [[sthref113]]
 
@@ -108,7 +107,6 @@ code of an endpoint instance at any given time.
 
 |=======================================================================
 
- +
 
 '''''
 

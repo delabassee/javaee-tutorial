@@ -133,7 +133,6 @@ call when an error occurs.
 in the request.
 |=======================================================================
 
- +
 +
 If no identifier is specified, the default assumed keyword for the
 `execute` attribute is `@this`, and for the `render` attribute it is
@@ -166,7 +165,6 @@ renderer for a component.
 
 |=======================================================================
 
- +
 +
 The following example shows how the resource is loaded in a bean class:
 +

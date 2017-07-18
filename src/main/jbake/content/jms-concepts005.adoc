@@ -143,7 +143,6 @@ activation configuration specification.
 
 |=======================================================================
 
- +
 
 When you inject the resource into a component, use the value of the
 `name` element in the definition annotation as the value of the `lookup`
@@ -263,7 +262,7 @@ private JMSContext context2;
 [[BNCGN]]
 
 [[using-java-ee-components-to-produce-and-to-synchronously-receive-messages]]
-45.5.4 Using Java EE Components to Produce and to Synchronously ReceiveMessages
+45.5.4 Using Java EE Components to Produce and to Synchronously Receive Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An application that produces messages or synchronously receives them can
@@ -445,7 +444,6 @@ be used to connect to the JMS provider from which the bean will receive
 messages
 |=======================================================================
 
- +
 
 For example, here is the message-driven bean used in
 link:jms-examples007.html#BNBPK[Receiving Messages Asynchronously Using a

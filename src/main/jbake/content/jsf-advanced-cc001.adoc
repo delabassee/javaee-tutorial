@@ -83,7 +83,6 @@ mutually exclusive. If you specify both, `method-signature` is ignored.
 The default type of an attribute is `java.lang.Object.`
 |=======================================================================
 
- +
 
 The following code snippet defines a composite component attribute and
 assigns it a default value:

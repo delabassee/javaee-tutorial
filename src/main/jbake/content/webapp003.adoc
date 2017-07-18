@@ -33,7 +33,7 @@ Next] | 
 [[BNADX]]
 
 [[a-web-module-that-uses-javaserver-faces-technology-the-hello1-example]]
-6.3 A Web Module That Uses JavaServer Faces Technology: The hello1Example
+6.3 A Web Module That Uses JavaServer Faces Technology: The hello1 Example
 --------------------------------------------------------------------------
 
 The `hello1` application is a web module that uses JavaServer Faces

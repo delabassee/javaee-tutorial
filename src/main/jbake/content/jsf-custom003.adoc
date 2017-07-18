@@ -335,7 +335,6 @@ hotspots.
 |`MapBookChangeListener` |The action listener for the `MapComponent`.
 |=======================================================================
 
- +
 
 The Duke's Bookstore source directory, called bookstore-dir, is
 tut-install`/examples/case-studies/dukes-bookstore/src/java/dukesbookstore/`.

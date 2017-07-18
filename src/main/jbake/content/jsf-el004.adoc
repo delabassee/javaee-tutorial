@@ -53,7 +53,6 @@ Java version associated with the Java EE 7 platform.
 
 |=======================================================================
 
- +
 
 For example, you can construct a set as follows:
 

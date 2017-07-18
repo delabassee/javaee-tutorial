@@ -84,7 +84,6 @@ shared durable topic subscriptions; see
 link:jms-examples005.html#BABEJBHA[Using Shared Durable Subscriptions]
 |=======================================================================
 
- +
 
 [[sthref200]][[sthref201]]
 
@@ -114,7 +113,6 @@ link:jms-examples009.html#BNCHF[Using an Entity to Join Messages from Two
 MDBs]
 |=======================================================================
 
- +
 
 '''''
 

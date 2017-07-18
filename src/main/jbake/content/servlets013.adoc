@@ -91,7 +91,6 @@ object.
 |`boolean isFinished()` |Returns true when all the data has been read.
 |=======================================================================
 
- +
 
 [[sthref106]][[BEIFIIIH]]
 
@@ -110,7 +109,6 @@ the write listener object.
 blocking.
 |=======================================================================
 
- +
 
 [[sthref107]][[BEIFGJCG]]
 
@@ -140,7 +138,6 @@ when it is possible to write data without blocking or when there is an
 error.
 |=======================================================================
 
- +
 
 [[sthref108]]
 

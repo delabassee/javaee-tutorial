@@ -111,7 +111,6 @@ return statement.
 
 |=======================================================================
 
- +
 4.  Right-click the `HelloWorldApplication` project in the Projects pane
 and select Run.
 +

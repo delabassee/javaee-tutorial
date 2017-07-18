@@ -63,7 +63,6 @@ effect as setting the `required` element of a composite component's
 attribute to `true`.
 |=======================================================================
 
- +
 
 '''''
 

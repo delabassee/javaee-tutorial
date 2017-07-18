@@ -266,7 +266,6 @@ retryable exceptions occur. Retryable exception classes are specified
 with the `retryable-exception-classes` element. |No limit
 |=======================================================================
 
- +
 
 The `chunk` element can contain the following elements.
 

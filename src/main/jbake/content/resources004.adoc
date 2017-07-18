@@ -33,7 +33,7 @@ Next] | 
 [[CHDJFIGB]]
 
 [[using-resource-adapters-with-contexts-and-dependency-injection-for-java-ee-cdi]]
-52.4 Using Resource Adapters with Contexts and Dependency Injection forJava EE (CDI)
+52.4 Using Resource Adapters with Contexts and Dependency Injection for Java EE (CDI)
 -------------------------------------------------------------------------------------
 
 For details about CDI, see link:cdi-basic.html#GIWHB[Chapter 23,

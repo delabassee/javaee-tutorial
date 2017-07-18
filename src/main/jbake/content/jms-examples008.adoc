@@ -58,7 +58,7 @@ the clientsessionmdb Example"]
 [[BNCGX]]
 
 [[writing-the-application-components-for-the-clientsessionmdb-example]]
-46.8.1 Writing the Application Components for the clientsessionmdbExample
+46.8.1 Writing the Application Components for the clientsessionmdb Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This application demonstrates how to send messages from an enterprise

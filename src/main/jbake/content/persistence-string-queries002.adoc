@@ -73,7 +73,6 @@ type mismatches will be caught at compile time.
 
 |=======================================================================
 
- +
 
 Joins are specified in the same way:
 

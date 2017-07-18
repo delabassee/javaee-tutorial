@@ -161,7 +161,6 @@ Inc.
 
 |=======================================================================
 
- +
 
 From the directory in which you want to create the key pair, run
 `keytool` as shown in the following steps.

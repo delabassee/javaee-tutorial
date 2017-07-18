@@ -132,7 +132,6 @@ HTML5-friendly markup
  |JSTL 1.2 Functions Tags
 |=======================================================================
 
- +
 
 Facelets provides two namespaces to support HTML5-friendly markup. For
 details, see link:jsf-facelets009.html#BABGECCJ[HTML5-Friendly Markup].

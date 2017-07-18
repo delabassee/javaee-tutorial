@@ -82,7 +82,6 @@ modification may result in decreased application performance.
 
 |=======================================================================
 
- +
 
 [[GKJJC]]
 
@@ -114,7 +113,6 @@ will be thrown.
 
 |=======================================================================
 
- +
 
 The `@Version` annotation has the following requirements.
 

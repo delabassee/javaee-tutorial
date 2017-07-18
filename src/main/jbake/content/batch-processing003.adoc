@@ -160,7 +160,6 @@ need to cast items to their specific type before processing them.
 
 |=======================================================================
 
- +
 
 The item writer writes the processed items to the output file. It
 overwrites the output file if no checkpoint is provided; otherwise, it

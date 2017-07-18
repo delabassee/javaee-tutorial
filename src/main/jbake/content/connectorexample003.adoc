@@ -202,7 +202,6 @@ this interface from the work management contract to wait for traffic
 updates on a separate thread.
 |=======================================================================
 
- +
 
 When an MDB activates the inbound resource adapter, the container
 invokes the `endpointActivation` method in the `TrafficResourceAdapter`

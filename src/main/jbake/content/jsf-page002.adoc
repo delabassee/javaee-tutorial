@@ -131,7 +131,6 @@ items all displayed at once |An HTML `<select>` element |A box
 items |An HTML `<input type="radio">` element |A group of options
 |=======================================================================
 
- +
 
 The tags correspond to components in the `javax.faces.component`
 package. The components are discussed in more detail in
@@ -185,7 +184,6 @@ styles.
 expression.
 |=======================================================================
 
- +
 
 All the tag attributes except `id` can accept expressions, as defined by
 the EL, described in link:jsf-el.html#GJDDD[Expression Language].
@@ -326,7 +324,6 @@ Web Applications"].
 
 |=======================================================================
 
- +
 
 [[BNARK]]
 
@@ -526,7 +523,6 @@ with no spaces and displays it as a set of asterisks as it is entered
 of text
 |=======================================================================
 
- +
 
 The input tags support the tag attributes shown in link:#GKCNH[Table
 10-4] in addition to those described in link:#BNARG[Common Component Tag
@@ -581,7 +577,6 @@ Handles a Value-Change Event] for an example of using
 `valueChangeListener`.
 |=======================================================================
 
- +
 
 link:#GJFWE[Table 10-5] lists the tags that represent the output
 components.
@@ -604,7 +599,6 @@ without generating an action event
 |`h:outputText` |Displays a one-line text string
 |=======================================================================
 
- +
 
 The output tags support the `converter` tag attribute in addition to
 those listed in link:#BNARG[Common Component Tag Attributes].
@@ -818,7 +812,7 @@ Hello, Bill! You are visitor number 10 to the page.
 [[BNARW]]
 
 [[using-command-component-tags-for-performing-actions-and-navigation]]
-10.2.5 Using Command Component Tags for Performing Actions andNavigation
+10.2.5 Using Command Component Tags for Performing Actions and Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In JavaServer Faces applications, the button and link component tags are
@@ -917,7 +911,6 @@ technology.
 
 |=======================================================================
 
- +
 
 [[BNASB]]
 
@@ -989,7 +982,6 @@ Table 10-6 Panel Component Tags
 |`h:panelGroup` |`layout` |Groups a set of components under one parent
 |=======================================================================
 
- +
 
 The `h:panelGrid` tag is used to represent an entire table. The
 `h:panelGroup` tag is used to represent rows in a table. Other tags are
@@ -1567,7 +1559,6 @@ Table 10-7 Optional Attributes for the h:dataTable Tag
 |`styleClass` |The entire table
 |================================
 
- +
 
 Each of the attributes in link:#GKBUK[Table 10-7] can specify more than
 one style. If `columnClasses` or `rowClasses` specifies more than one
@@ -1874,7 +1865,7 @@ The name in the greeting changes to what you typed.
 [[GJGEP]]
 
 [[resource-relocation-using-houtputscript-and-houtputstylesheet-tags]]
-10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheetTags
+10.2.17 Resource Relocation Using h:outputScript and h:outputStylesheet Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Resource relocation refers to the ability of a JavaServer Faces

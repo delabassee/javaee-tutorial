@@ -91,7 +91,6 @@ Table 28-1 Mapping of XML Data Types to Java Data Types in JAXB
 |`xsd:NOTATION` |`javax.xml.namespace.QName`
 |=========================================================
 
- +
 
 [[BNAZW]]
 
@@ -125,7 +124,6 @@ Table 28-2 Mapping of Java Classes to XML Data Types in JAXB
 |`java.util.UUID` |`xs:string`
 |=============================================================
 
- +
 
 '''''
 

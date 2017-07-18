@@ -432,7 +432,6 @@ complete.
 
 |=======================================================================
 
- +
 
 [[BNCFB]]
 
@@ -637,7 +636,6 @@ message-driven bean, shown in later examples in this chapter.
 
 |=======================================================================
 
- +
 
 The following topics are addressed here:
 
@@ -1106,7 +1104,6 @@ in application clients, as in this example.
 
 |=======================================================================
 
- +
 
 The `clientackconsumer` example demonstrates the first alternative, in
 which a synchronous consumer uses client acknowledgment. The
@@ -1142,7 +1139,6 @@ fail
 `onMessage` method returns
 |=======================================================================
 
- +
 
 The example is under the
 tut-install`/examples/jms/simple/clientackconsumer/` directory.

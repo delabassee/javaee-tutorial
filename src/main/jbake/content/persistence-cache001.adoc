@@ -58,7 +58,6 @@ providers for a second-level cache.
 
 |=======================================================================
 
- +
 
 The second-level cache for a persistence unit may be configured to one
 of several second-level cache modes. The following cache mode settings
@@ -88,7 +87,6 @@ undefined. The persistence provider's default caching behavior will be
 used.
 |=======================================================================
 
- +
 
 One consequence of using a second-level cache in an application is that
 the underlying data may have changed in the database tables, while the

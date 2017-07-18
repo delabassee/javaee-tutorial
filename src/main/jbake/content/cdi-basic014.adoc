@@ -33,7 +33,7 @@ Next] | 
 [[BABJFEAI]]
 
 [[using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes]]
-23.14 Using the @PostConstruct and @PreDestroy Annotations with CDIManaged Bean Classes
+23.14 Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
 ----------------------------------------------------------------------------------------
 
 CDI managed bean classes and their superclasses support the annotations
@@ -80,7 +80,6 @@ class overrides the method.
 
 |=======================================================================
 
- +
 
 The `UserNumberBean` managed bean in
 link:cdi-basicexamples003.html#GJCXV[The guessnumber-cdi CDI Example]
@@ -101,7 +100,7 @@ public void reset () {
 [[CIHBAFAC]]
 
 [[to-prepare-for-the-destruction-of-a-managed-bean-using-the-predestroy-annotation]]
-23.14.2 To Prepare for the Destruction of a Managed Bean Using the@PreDestroy Annotation
+23.14.2 To Prepare for the Destruction of a Managed Bean Using the @PreDestroy Annotation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Preparing for the destruction of a managed bean specifies the lifecycle

@@ -33,7 +33,7 @@ Next] | 
 [[GKHRG]]
 
 [[the-producerfields-example-using-producer-fields-to-generate-resources]]
-26.4 The producerfields Example: Using Producer Fields to GenerateResources
+26.4 The producerfields Example: Using Producer Fields to Generate Resources
 ----------------------------------------------------------------------------
 
 The `producerfields` example, which allows you to create a to-do list,

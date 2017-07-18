@@ -33,7 +33,7 @@ Next] | 
 [[BNATM]]
 
 [[binding-converters-listeners-and-validators-to-managed-bean-properties]]
-15.14 Binding Converters, Listeners, and Validators to Managed BeanProperties
+15.14 Binding Converters, Listeners, and Validators to Managed Bean Properties
 ------------------------------------------------------------------------------
 
 As described in link:jsf-page002.html#BNARF[Adding Components to a Page

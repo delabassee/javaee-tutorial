@@ -447,7 +447,6 @@ expressions with Java SE 7, the Java version associated with the Java EE
 
 |=======================================================================
 
- +
 
 A lambda expression uses the arrow token (`->)` operator. The
 identifiers to the left of the operator are called lambda parameters.

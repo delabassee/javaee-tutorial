@@ -85,7 +85,6 @@ property that accepts and returns a `ValueChangeListener`
 implementation.
 |=======================================================================
 
- +
 
 The following example shows a value-change listener registered on a
 component:

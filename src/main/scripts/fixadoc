@@ -39,7 +39,7 @@
 # holder.
 #
 
-# fixadoc [file ...]
+# fixadoc file ...
 #
 #	fix asciidoc output from pandoc for the Java EE Tutorial files
 #	given file.txt, the fixed output is in file.adoc
@@ -50,37 +50,88 @@ if 0;
 
 if ($#ARGV >= 0) {
 	foreach $arg (@ARGV) {
-		if (!open(STDIN, $arg)) {
-			printf "%s: can not open\n", $arg;
-		} else {
-			$out = $arg;
-			$out =~ s/(\.[a-z]*)?$/.adoc/;
-			$inplace = 0;
-			if ($out eq $arg) {
-				$inplace = 1;
-				$out = $arg . "+";
-			}
-			if (!open(OUT, ">" . $out)) {
-				printf "%s: can not write\n", $out;
-			} else {
-				$stat = &fixadoc($arg);
-				close(OUT);
-				close(STDIN);
-				if ($stat) {
-					if ($inplace) {
-						rename($out, $arg);
-					}
-				} else {
-					unlink($out);
-				}
-			}
-		}
+		$out = $arg;
+		$out =~ s/(\.[a-z]*)?$/.adoc/;
+		$stat = &fixadoc($arg, $out);
 	}
 } else {
-	&fixadoc("<stdin>", STDOUT);
+	printf "Usage: fixadoc file ...\n";
+	exit 1;
 }
 
+local($lastlen) = 0;
+local($prevprev) = undef;
+local($prev) = undef;
+
+#
+# putline(FD, line)
+#
+#	buffers the previous two lines before writing them so we can
+#	go back and unwrap them if necessary (see &unwrapprev).
+#
+sub putline {
+	local($OUTF, $line) = @_;
+
+	$line =~ s/jeett_dt_/javaeett_dt_/g;
+	$line =~ s:\.\./\.\./dcommon/gifs:img:;
+	$line =~ s:\.\./\.\./dcommon/html/::;
+	$line =~ s/\.htm([^l])/.html\1/g;
+	printf $OUTF "%s\n", $prevprev if (defined($prevprev));
+	$prevprev = $prev;
+	$prev = $line;
+	$lastlen = length($prev);
+}
+
+#
+# unwraprev
+#
+#	unwrap the previous two lines, combining them into one.
+#
+sub unwrapprev {
+	$prev = $prevprev . " " . $prev;
+	$lastlen = length($prev);
+	undef($prevprev);
+}
+
+#
+# flushout(FD)
+#
+#	flush buffered lines to FD.
+#
+sub flushout {
+	local($OUTF) = @_;
+	printf $OUTF "%s\n", $prevprev if (defined($prevprev));
+	printf $OUTF "%s\n", $prev;
+	undef($prevprev);
+	undef($prev);
+}
+
+#
+# fixadoc(input-file, output-file)
+#
+#	if outfile-file is the same as input-file, the output is generated
+#	into output-file+ and then renamed.
+#
 sub fixadoc {
+
+local($in, $out) = @_;
+
+local($inplace) = 0;
+if ($out eq $in) {
+	$inplace = 1;
+	$out = $in . "+";
+}
+
+if (!open(IN, $in)) {
+	printf "%s: can not open\n", $in;
+	return 0;
+}
+
+if (!open(OUT, ">" . $out)) {
+	printf "%s: can not write\n", $out;
+	close(IN);
+	return 0;
+}
 
 local($title);
 local($saw_copyright) = 0;
@@ -89,10 +140,13 @@ local($img_text) = 0;
 # read the title line(s)
 
 title_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	if (/type=page/) {
 		printf "%s: already fixed\n", $arg;
+		close(OUT);
+		close(IN);
+		unlink($out);
 		return 0;
 	}
 	last title_line if (/^=/);
@@ -120,13 +174,16 @@ print OUT "$_\n";
 # if this is an img_text file, handle it specially
 
 if ($img_text) {
-	while (<STDIN>) {
+	while (<IN>) {
 		s/\r?\n$//;
 		s/jeett_dt_/javaeett_dt_/g;
-		s:\.\./\.\./dcommon/gifs:img:;
-		s:\.\./\.\./dcommon/html/::;
-		s/\.htm([^l])/.html\1/g;
-		print OUT "$_\n";
+		&putline(OUT, $_);
+	}
+	&flushout(OUT);
+	close(OUT);
+	close(IN);
+	if ($inplace) {
+		rename($out, $in);
 	}
 	return 1;
 }
@@ -134,41 +191,35 @@ if ($img_text) {
 # read everything before the first header table
 
 preheader_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	last preheader_line if (/\[width=/);
 	if (/^link:#BEGIN/) {
-		<STDIN>;
+		<IN>;
 		next preheader_line;
 	}
-	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html/::;
-	s/\.htm([^l])/.html\1/g;
-	print OUT "$_\n";
+	&putline(OUT, $_);
 }
 
 # beginning of the header table
-print OUT '[width="100%",cols="50%,45%,^5%",]', "\n";
-$_ = <STDIN>;
+&putline(OUT, '[width="100%",cols="50%,45%,^5%",]');
+$_ = <IN>;
 s/\r?\n$//;
-print OUT "$_\n";
+&putline(OUT, $_);
 
 header_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	last header_line if (/^$/);
 	next header_line if (/^\|=/);
 	if (/\[cols=/) {
-		<STDIN>;
-		print OUT "|\n";
+		<IN>;
+		&putline(OUT, "|");
 		next header_line;
 	}
 	s/ a\|//;
 	s/\|.*\|/|/;
-	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html/::;
-	s/\.htm([^l])/.html\1/g;
-	print OUT "$_\n";
+	&putline(OUT, $_);
 }
 
 # read lines from the end of the header table through the end of
@@ -176,50 +227,49 @@ while (<STDIN>) {
 # lines after the subheader table up to the [[BEGIN]] line
 
 subheader_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	last subheader_line if (/\[\[BEGIN]]/);
 	if (/\[cols=/) {
 		# beginning of subheader table
-		print OUT '[cols="^5%,^5%,90%",]', "\n";
+		&putline(OUT, '[cols="^5%,^5%,90%",]');
 		next subheader_line;
 	}
 	s/ a\|//;
 	s/\|.*\|/|/;
-	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html/::;
-	s/\.htm([^l])/.html\1/g;
-	print OUT "$_\n";
+	&putline(OUT, $_);
 }
 
 # read lines of the body until we get to the footer table
 
-local($len) = 0;
 local($table_boundary) = 0;
 local($table_end) = 0;
 local($plus_line) = 0;
 
 body_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	last body_line if (/\[width="66%",cols="50%,,50%",]/);
 	next body_line if (/^\[\[JEETT/);	# remove the "JEE" anchors
 	if (/^Beta Draft:/) {
-		<STDIN>;
+		<IN>;
 		next body_line;
 	}
 	if (/^-{5,}/) {
-		if (length != $len) {
-			printf "%s: %d: WARNING, bad table?\n", $arg, $.;
-			print OUT "UNWRAP\n";
+		if (length != $lastlen) {
+			#printf "%s: %d: WARNING, bad table?\n", $arg, $.;
+			&unwrapprev;
 		}
 	}
 	if (/^~{5,}/) {
-		if (length == $len - 1) {
+		if (length == $lastlen - 1) {
 			$_ = $_ . "~";	# fix it
-		} elsif (length != $len) {
-			printf "%s: %d: WARNING, bad section title?\n", $arg, $.;
-			print OUT "UNWRAP\n";
+		} elsif (length != $lastlen) {
+			#printf "%s: %d: WARNING, bad section title?\n", $arg, $.;
+			&unwrapprev;
+			if (length == $lastlen - 1) {
+				$_ = $_ . "~";	# fix it
+			}
 		}
 	}
 	# a table followed by a line with just " +"
@@ -247,63 +297,61 @@ while (<STDIN>) {
 	} elsif (/^\+$/) {
 		$plus_line = 1;
 	} else {
-		$table_boundary = 0;
-		$table_end = 0;
 		$plus_line = 0;
 	}
 	# a sub-bullet not preceded by a blank line
-	if (/^\*\* / && $len != 0) {
-		print OUT "\n";
+	if (/^\*\* / && $lastlen != 0) {
+		&putline(OUT, "");
 	}
-	s/jeett_dt_/javaeett_dt_/g;
-	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html/::;
-	s/\.htm([^l])/.html\1/g;
-	$len = length;
-	print OUT "$_\n";
+	&putline(OUT, $_);
 }
 
 # beginning of footer table
 
-print OUT '[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]', "\n";
-print OUT "|====================================================================\n";
+&putline(OUT, '[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]');
+&putline(OUT, "|====================================================================");
 # throw away a few unneeded lines
 skip_lines:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	last skip_lines if (/\[width=/);
 }
 
 footer_line:
-while (<STDIN>) {
+while (<IN>) {
 	s/\r?\n$//;
 	next footer_line if (/^\|=/);
 	next footer_line if (/^\|\302\240$/);
 	if (/^$/) {
 		last footer_line if ($saw_copyright);
-		print OUT "|\n";
+		&putline(OUT, "|");
 		next footer_line;
 	}
 	if (/^Copyright/) {
-		<STDIN>;
-		print OUT "Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]\n";
+		<IN>;
+		&putline(OUT, "Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]");
 		$saw_copyright = 1;
 		next footer_line;
 	}
 	if (/\[cols=",",]/) {
-		<STDIN>;
-		print OUT "|\n";
+		<IN>;
+		&putline(OUT, "|");
 		next footer_line;
 	}
 	s/^\|.*\|/|/;
 	s/^ \|/|/;
-	s:\.\./\.\./dcommon/gifs:img:;
-	s:\.\./\.\./dcommon/html/::;
-	s/\.htm([^l])/.html\1/g;
-	print OUT "$_\n";
+	&putline(OUT, $_);
 }
 
-print OUT "|====================================================================\n";
+&putline(OUT, "|====================================================================");
+
+&flushout(OUT);
+close(OUT);
+close(IN);
+
+if ($inplace) {
+	rename($out, $in);
+}
 
 return 1;	# success
 }

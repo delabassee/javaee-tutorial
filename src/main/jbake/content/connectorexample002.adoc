@@ -131,7 +131,6 @@ handles to the EIS
 processing a trade request
 |=======================================================================
 
- +
 
 The `ResourceAccessBean` managed bean in the `trading-war` module
 configures a connection factory for the `trading-rar` resource adapter
@@ -182,7 +181,6 @@ application server. However, this is a vendor-specific procedure.
 
 |=======================================================================
 
- +
 
 The managed bean obtains a connection factory object using resource
 injection as follows:
@@ -270,7 +268,6 @@ factory that applications use to obtain connection handles
 applications use to interact with the EIS
 |=======================================================================
 
- +
 
 When the `trading-ear` archive is deployed and a connection pool
 resource is configured as described in link:#CHDFADJD[Using the Outbound
