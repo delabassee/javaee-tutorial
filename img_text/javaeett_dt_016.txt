@@ -1,0 +1,10 @@
+Description of the illustration jeett_dt_016.eps
+================================================
+
+Flow diagram of Faces request and Faces response, including event and
+validation processing, error handling, model updating, application
+invocation.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

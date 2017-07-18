@@ -1,0 +1,10 @@
+Description of the illustration jeett_dt_056.eps
+================================================
+
+This figure shows the components of the traffic example: a WAR
+communicating with an enterprise bean using a JMS topic, and a RAR
+communicating with an EIS over a TCP socket.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

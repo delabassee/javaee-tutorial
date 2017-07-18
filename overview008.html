@@ -20,8 +20,8 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Java Platform, Enterprise Edition The Java EE Tutorial</strong><br>
-<strong>Release 7 Java Platform, Enterprise Edition</strong><br>
-E39031-02</p></td>
+<strong>Release 8 Java Platform, Enterprise Edition</strong><br>
+E63026-01</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
 Contents</a></p></td>
@@ -58,8 +58,8 @@ containers.</p>
 <p>Figure 1-6 Java EE Containers</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_006.png" alt="Description of Figure 1-6 follows"></span><br>
-<a href="img_text/jeett_dt_006.html">Description of "Figure 1-6 Java EE
+<p><span class="image"><img src="img/javaeett_dt_006.png" alt="Description of Figure 1-6 follows"></span><br>
+<a href="img_text/javaeett_dt_006.html">Description of "Figure 1-6 Java EE
 Containers"</a><br>
 <br></p>
 </div>
@@ -71,8 +71,8 @@ the web container.</p>
 <p>Figure 1-7 Java EE APIs in the Web Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_007.png" alt="Description of Figure 1-7 follows"></span><br>
-<a href="img_text/jeett_dt_007.html">Description of "Figure 1-7 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_007.png" alt="Description of Figure 1-7 follows"></span><br>
+<a href="img_text/javaeett_dt_007.html">Description of "Figure 1-7 Java EE APIs
 in the Web Container"</a><br>
 <br></p>
 </div>
@@ -84,8 +84,8 @@ the EJB container.</p>
 <p>Figure 1-8 Java EE APIs in the EJB Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_008.png" alt="Description of Figure 1-8 follows"></span><br>
-<a href="img_text/jeett_dt_008.html">Description of "Figure 1-8 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_008.png" alt="Description of Figure 1-8 follows"></span><br>
+<a href="img_text/javaeett_dt_008.html">Description of "Figure 1-8 Java EE APIs
 in the EJB Container"</a><br>
 <br></p>
 </div>
@@ -97,8 +97,8 @@ the application client container.</p>
 <p>Figure 1-9 Java EE APIs in the Application Client Container</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/jeett_dt_009.png" alt="Description of Figure 1-9 follows"></span><br>
-<a href="img_text/jeett_dt_009.html">Description of "Figure 1-9 Java EE APIs
+<p><span class="image"><img src="img/javaeett_dt_009.png" alt="Description of Figure 1-9 follows"></span><br>
+<a href="img_text/javaeett_dt_009.html">Description of "Figure 1-9 Java EE APIs
 in the Application Client Container"</a><br>
 <br></p>
 </div>
@@ -161,21 +161,21 @@ servlets can respond to any type of request, they are commonly used to
 extend the applications hosted by web servers.</p>
 </div>
 <div class="paragraph">
-<p>In the Java EE 7 platform, new Java Servlet technology features include
+<p>In the Java EE 8 platform, new Java Servlet technology features include
 the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Nonblocking I/O</p>
+<p>HTTP/2 server push</p>
 </li>
 <li>
-<p>HTTP protocol upgrade</p>
+<p>Servlet Mapping API</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Java EE 7 platform requires Servlet 3.1.</p>
+<p>The Java EE 8 platform requires Servlet 4.0</p>
 </div>
 </div>
 <div class="sect2">
@@ -231,25 +231,32 @@ stored in a model object to types that can be represented in a view.</p>
 XML-based configuration files.</p>
 </div>
 <div class="paragraph">
-<p>In the Java EE 7 platform, new features of JavaServer Faces technology
+<p>In the Java EE 8 platform, new features of JavaServer Faces technology
 include the following:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>HTML5-friendly markup</p>
+<p>Direct support for WebSockets via the new <code>&lt;f:websocket&gt;</code> tag</p>
 </li>
 <li>
-<p>Faces Flows</p>
+<p>Class-level bean validation via the new <code>&lt;f:validateWholeBean&gt;</code> tag</p>
 </li>
 <li>
-<p>Resource library contracts</p>
+<p>A CDI compatible <code>@ManagedProperty</code> annotation</p>
+</li>
+<li>
+<p>Enhanced component search expression framework</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Java EE 7 platform requires JavaServer Faces 2.2 and Expression
+<p>The Java EE 8 platform requires JavaServer Faces 2.3 and Expression
 Language 3.0.</p>
+</div>
+<div class="paragraph">
+<p>For an excellent summary of what&#8217;s new in JSF 2.3, see Arjan Tijms'
+weblog at <code>https://javaserverfaces.github.io/users.html</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -611,8 +618,8 @@ Previous</a> </p></td>
 Next</a></p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/oracle.gif" alt="Oracle Logo"></span>
-<a href="/cpyr.html"><br>
-Copyright © 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
+<a href="cpyr.html"><br>
+Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.</a></p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toc.html"><span class="image"><img src="img/toc.gif" alt="Go To Table Of Contents"></span><br>
 Contents</a></p></td>

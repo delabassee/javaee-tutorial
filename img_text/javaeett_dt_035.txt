@@ -1,0 +1,10 @@
+Description of the illustration jeett_dt_035.eps
+================================================
+
+Diagram showing a web application in which a managed bean sends a
+message to a queue, and another managed bean receives the message from
+the queue.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

@@ -1,0 +1,9 @@
+Description of the illustration jeett_dt_043.eps
+================================================
+
+Diagram of authorization process between web component and enterprise
+bean
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

@@ -1,0 +1,9 @@
+Description of the illustration jeett_dt_027.eps
+================================================
+
+Diagram of JMS API architecture, showing administrative tool, JMS
+client, JNDI namespace, and JMS provider
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

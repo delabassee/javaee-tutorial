@@ -1,0 +1,11 @@
+Description of the illustration jeett_dt_017.eps
+================================================
+
+This figure shows two Faces flows, Flow A and Flow B. Each has a start
+node and two additional pages. Each has an associated managed bean. Each
+defines a return node, and each defines two parameters to be passed to
+the other flow.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

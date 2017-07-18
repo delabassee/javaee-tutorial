@@ -1,0 +1,12 @@
+Description of the illustration jeett_dt_061.eps
+================================================
+
+Architecture diagram of the Duke's Tutoring example application. Two
+clients access the main interface and the admin interface deployed in
+the web container. These interfaces communicate with enterprise beans
+deployed in the EJB container. The enterprise beans communicate with the
+database.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

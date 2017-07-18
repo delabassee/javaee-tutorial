@@ -1,0 +1,9 @@
+Description of the illustration jeett_dt_029.eps
+================================================
+
+Diagram of pub/sub messaging, showing Client 1 sending a message to a
+topic, and the message being delivered to two consumers to the topic
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

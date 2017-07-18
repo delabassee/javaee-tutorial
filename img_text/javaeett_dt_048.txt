@@ -1,0 +1,8 @@
+Description of the illustration jeett_dt_048.eps
+================================================
+
+Diagram of six steps in mutual authentication with certificates
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

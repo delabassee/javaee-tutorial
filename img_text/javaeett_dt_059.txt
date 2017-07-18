@@ -1,0 +1,13 @@
+Description of the illustration jeett_dt_059.eps
+================================================
+
+This figure shows a batch job that contains two chunk steps, a task step
+and a decision element. The job starts with chunk step A, continues with
+chunk step B, and then decision element D evaluates condition 1. The
+condition is based on the status of step B. If condition 1 is true, the
+job terminates; otherwise the job continues with step C and then the job
+ends.
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]

@@ -1,0 +1,9 @@
+Description of the illustration jeett_dt_028.eps
+================================================
+
+Diagram of point-to-point messaging, showing Client 1 sending a message
+to a queue, and Client 2 consuming and acknowledging the message
+
+image:../../../dcommon/gifs/oracle.gif[Oracle,width=144,height=18] +
+link:../../../dcommon/html/cpyr.htm[Copyright © 2014,
+2017, Oracle and/or its affiliates. All rights reserved.]
