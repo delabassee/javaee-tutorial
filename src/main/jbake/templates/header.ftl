@@ -1,5 +1,5 @@
-<#-- a header template fragment included in the page template -->
 <!DOCTYPE html>
+<#-- a header template fragment included in the page template -->
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
@@ -8,3 +8,49 @@
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style.css" rel="stylesheet">
   </head>
   <body>
+<table cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+  <td align="left" valign="top">
+  <b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
+  <b>Release 8 Java Platform, Enterprise Edition</b><br />
+  E63026-01
+  </td>
+  <td valign="bottom" align="right">
+  <table cellspacing="0" cellpadding="0" width="225">
+    <tr>
+      <td>&nbsp;</td>
+      <td align="center" valign="top">
+        <a href="toc.html"><img src="img/toc.gif" alt="Go To Table Of Contents" />
+          <br />
+          <span class="icon">Contents</span>
+        </a>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+</table>
+<hr />
+<table cellspacing="0" cellpadding="0" width="100">
+  <tr>
+    <td align="center">
+      <#if (content.prev)??>
+        <a href="${content.prev}">
+          <img src="img/leftnav.gif" alt="Previous" />
+          <br />
+          <span class="icon">Previous</span>
+        </a>
+      </#if>
+    </td>
+    <td align="center">
+      <#if (content.next)??>
+        <a href="${content.next}">
+	  <img src="img/rightnav.gif" alt="Next" />
+	  <br />
+          <span class="icon">Next</span>
+	</a>
+      </#if>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>

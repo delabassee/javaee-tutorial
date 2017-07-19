@@ -1,34 +1,11 @@
 type=page
 status=published
 title=Overview of Java EE Security
+next=security-intro002.html
+prev=security-intro.html
 ~~~~~~
 Overview of Java EE Security
 ============================
-2017-07-17T15:27:53Z
-
-[[top]]
-
-[width="100%",cols="50%,45%,^5%",]
-|=======================================================================
-|*Java Platform, Enterprise Edition The Java EE Tutorial* +
-*Release 8 Java Platform, Enterprise Edition* +
-E63026-01
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|=======================================================================
-
-'''''
-
-[cols="^5%,^5%,90%",]
-|=======================================================================
-|link:security-intro.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro002.html[image:img/rightnav.gif[Next] +
-Next] | 
-|=======================================================================
-
 
 [[BNBWK]]
 
@@ -316,20 +293,4 @@ security-related events for the purpose of being able to evaluate the
 effectiveness of security policies and mechanisms. To enable this, the
 system maintains a record of transactions and security information.
 
-'''''
 
-[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]
-|====================================================================
-|link:security-intro.html[image:img/leftnav.gif[Previous] +
-Previous] 
-|link:security-intro002.html[image:img/rightnav.gif[Next] +
-Next]
-|
-|image:img/oracle.gif[Oracle Logo]
-link:cpyr.html[ +
-Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]
-|
-|link:toc.html[image:img/toc.gif[Go To Table Of
-Contents] +
-Contents]
-|====================================================================

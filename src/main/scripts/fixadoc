@@ -161,19 +161,17 @@ if ($title =~ /\.eps$/) {
 	$title =~ s/jeett/javaeett/;
 	$_ =~ s/=//;
 }
-
-# print the jekyl header
-
-print OUT "type=page\n";
-print OUT "status=published\n";
-print OUT "title=$title\n";
-print OUT "~~~~~~\n";
-print OUT "$title\n";
-print OUT "$_\n";
+$break = $_;
 
 # if this is an img_text file, handle it specially
 
 if ($img_text) {
+	&putline(OUT, "type=page");
+	&putline(OUT, "status=published");
+	&putline(OUT, "title=$title");
+	&putline(OUT, "~~~~~~");
+	&putline(OUT, "$title");
+	&putline(OUT, "$break");
 	while (<IN>) {
 		s/\r?\n$//;
 		s/jeett_dt_/javaeett_dt_/g;
@@ -188,57 +186,32 @@ if ($img_text) {
 	return 1;
 }
 
-# read everything before the first header table
+# read and throw away header lines up to the [[BEGIN]] line.
+# remember the navigation links.
 
-preheader_line:
-while (<IN>) {
-	s/\r?\n$//;
-	last preheader_line if (/\[width=/);
-	if (/^link:#BEGIN/) {
-		<IN>;
-		next preheader_line;
-	}
-	&putline(OUT, $_);
-}
-
-# beginning of the header table
-&putline(OUT, '[width="100%",cols="50%,45%,^5%",]');
-$_ = <IN>;
-s/\r?\n$//;
-&putline(OUT, $_);
-
+local($nextlink) = undef;
+local($prevlink) = undef;
 header_line:
 while (<IN>) {
 	s/\r?\n$//;
-	last header_line if (/^$/);
-	next header_line if (/^\|=/);
-	if (/\[cols=/) {
-		<IN>;
-		&putline(OUT, "|");
-		next header_line;
+	last header_line if (/\[\[BEGIN]]/);
+	if (/leftnav\.gif/) {
+		($prevlink = $_) =~ s/.*link:([^.]*)\.htm.*/\1.html/;
+	} elsif (/rightnav\.gif/) {
+		($nextlink = $_) =~ s/.*link:([^.]*)\.htm.*/\1.html/;
 	}
-	s/ a\|//;
-	s/\|.*\|/|/;
-	&putline(OUT, $_);
 }
 
-# read lines from the end of the header table through the end of
-# the subheader table, including lines between the two tables and
-# lines after the subheader table up to the [[BEGIN]] line
+# print the jekyl header
 
-subheader_line:
-while (<IN>) {
-	s/\r?\n$//;
-	last subheader_line if (/\[\[BEGIN]]/);
-	if (/\[cols=/) {
-		# beginning of subheader table
-		&putline(OUT, '[cols="^5%,^5%,90%",]');
-		next subheader_line;
-	}
-	s/ a\|//;
-	s/\|.*\|/|/;
-	&putline(OUT, $_);
-}
+&putline(OUT, "type=page");
+&putline(OUT, "status=published");
+&putline(OUT, "title=$title");
+&putline(OUT, "next=$nextlink") if defined($nextlink);
+&putline(OUT, "prev=$prevlink") if defined($prevlink);
+&putline(OUT, "~~~~~~");
+&putline(OUT, "$title");
+&putline(OUT, "$break");
 
 # read lines of the body until we get to the footer table
 
@@ -306,44 +279,11 @@ while (<IN>) {
 	&putline(OUT, $_);
 }
 
-# beginning of footer table
-
-&putline(OUT, '[width="100%",cols="^5%,^5%,^10%,^65%,^10%,^5%",]');
-&putline(OUT, "|====================================================================");
-# throw away a few unneeded lines
-skip_lines:
-while (<IN>) {
-	s/\r?\n$//;
-	last skip_lines if (/\[width=/);
+# get rid of trailing separator
+if ($prevprev eq "'''''") {
+	undef($prevprev);
+	undef($prev);
 }
-
-footer_line:
-while (<IN>) {
-	s/\r?\n$//;
-	next footer_line if (/^\|=/);
-	next footer_line if (/^\|\302\240$/);
-	if (/^$/) {
-		last footer_line if ($saw_copyright);
-		&putline(OUT, "|");
-		next footer_line;
-	}
-	if (/^Copyright/) {
-		<IN>;
-		&putline(OUT, "Copyright © 2014, 2017, Oracle and/or its affiliates. All rights reserved.]");
-		$saw_copyright = 1;
-		next footer_line;
-	}
-	if (/\[cols=",",]/) {
-		<IN>;
-		&putline(OUT, "|");
-		next footer_line;
-	}
-	s/^\|.*\|/|/;
-	s/^ \|/|/;
-	&putline(OUT, $_);
-}
-
-&putline(OUT, "|====================================================================");
 
 &flushout(OUT);
 close(OUT);
