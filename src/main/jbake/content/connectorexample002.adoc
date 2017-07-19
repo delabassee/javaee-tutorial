@@ -145,7 +145,6 @@ prefix in `#trading-rar` indicates that `trading-rar` is an embedded
 resource adapter that is bundled in the same EAR as this web
 application.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

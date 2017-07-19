@@ -39,7 +39,6 @@ event listener and an event handler and manually queue the event on the
 component. See link:jsf-custom008.html#BNAWD[Handling Events for Custom
 Components] for more information.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

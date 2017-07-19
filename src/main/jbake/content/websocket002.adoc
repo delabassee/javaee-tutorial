@@ -37,7 +37,6 @@ packages mentioned previously. After you have created an endpoint, you
 deploy it to an specific URI in the application so that remote clients
 can connect to it.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -68,7 +67,6 @@ The process is slightly different for programmatic endpoints and
 annotated endpoints, and it is covered in detail in the following
 sections.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

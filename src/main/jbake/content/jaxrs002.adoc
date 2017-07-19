@@ -340,7 +340,6 @@ following variable names and values are used in the examples:
 * `location`: `Main%20Street`
 * `question`: `why`
 
- +
 
 [width="100%",cols="100%",]
 |====================================================

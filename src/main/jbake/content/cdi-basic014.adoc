@@ -44,7 +44,6 @@ When the managed bean is injected into a component, CDI calls the method
 after all injection has occurred and after all initializers have been
 called.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

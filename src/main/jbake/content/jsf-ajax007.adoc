@@ -36,7 +36,6 @@ command button):
 <h:outputText id="result" value="#{userNumberBean.response}" />
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

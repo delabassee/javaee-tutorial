@@ -172,7 +172,6 @@ thrown, but the current transaction will not be marked for rollback. If
 you set this property to `0`, the persistence provider should throw a
 `LockTimeoutException` if it cannot immediately obtain a lock.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

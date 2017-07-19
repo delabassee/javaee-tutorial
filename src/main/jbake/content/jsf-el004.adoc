@@ -17,7 +17,6 @@ The EL supports operations on collection objects: sets, lists, and maps.
 It allows the dynamic creation of collection objects, which can then be
 operated on using streams and pipelines.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -94,7 +93,6 @@ Streams and stream operations are documented in the Java SE 8 API
 documentation, available at `http://docs.oracle.com/javase/8/docs/api/`.
 The following subset of operations is supported by the EL:
 
- +
 `allMatch` +
 `anyMatch` +
 `average` +

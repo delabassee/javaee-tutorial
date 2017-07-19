@@ -51,7 +51,6 @@ constructs on the right.
 a|
 `*`
 
- +
 
  |The preceding construct may occur zero or more times.
 
@@ -62,7 +61,6 @@ a|
 a|
 `|`
 
- +
 
  |An exclusive `OR`.
 
@@ -344,7 +342,6 @@ A query language identifier is case-sensitive, with two exceptions:
 An identifier cannot be the same as a query language keyword. Here is a
 list of query language keywords:
 
- +
 `ABS` +
 `ALL` +
 `AND` +

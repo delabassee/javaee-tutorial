@@ -59,7 +59,6 @@ example: `minute="15"`.
 |`dayOfWeek` |One or more days within a week a|
 `*`
 
- +
 
  a|
 `0` to `7` (both 0 and 7 refer to Sunday). For example: `dayOfWeek="3"`.
@@ -70,7 +69,6 @@ example: `minute="15"`.
 |`dayOfMonth` |One or more days within a month a|
 `*`
 
- +
 
  a|
 `1` to `31`. For example: `dayOfMonth="15"`.
@@ -86,7 +84,6 @@ of the month). For example: `dayOfMonth="–3"`.
 |`month` |One or more months within a year a|
 `*`
 
- +
 
  a|
 `1` to `12`. For example: `month="7"`.
@@ -97,7 +94,6 @@ of the month). For example: `dayOfMonth="–3"`.
 |`year` |A particular calendar year a|
 `*`
 
- +
 
  |A four-digit calendar year. For example: `year="2011"`.
 |=======================================================================
@@ -619,7 +615,6 @@ public class TimerSessionBean {
 }
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

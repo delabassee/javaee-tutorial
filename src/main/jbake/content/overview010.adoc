@@ -40,7 +40,6 @@ Table 1-1 GlassFish Server Tools
 a|
 Administration Console
 
- +
 
  |A web-based GUI GlassFish Server administration utility. Used to stop
 GlassFish Server and to manage users, resources, and applications.

@@ -215,10 +215,6 @@ while (<IN>) {
 
 # read lines of the body until we get to the footer table
 
-local($table_boundary) = 0;
-local($table_end) = 0;
-local($plus_line) = 0;
-
 body_line:
 while (<IN>) {
 	s/\r?\n$//;
@@ -245,33 +241,12 @@ while (<IN>) {
 			}
 		}
 	}
-	# a table followed by a line with just " +"
-	if ($table_end) {
-		$table_end = 0;
-		if (/^ \+$/) {
-			next body_line;
-		}
-	} elsif ($table_boundary) {
-		$table_boundary = 0;
-		if (/^$/) {
-			$table_end = 1;
-		} else {
-			$table_end = 0;
-		}
-	} elsif (/^\|={5,}/) {
-		$table_boundary = 1;
+
+	# a line with just " +" preceeded by a line with just "+" or a blank line
+	if (/^ \+$/ && ($prev eq '+' || $lastlen == 0)) {
+		next body_line;
 	}
-	# a line with just "+" followed by a line with just " +"
-	if ($plus_line) {
-		$plus_line = 0;
-		if (/^ \+$/) {
-			next body_line;
-		}
-	} elsif (/^\+$/) {
-		$plus_line = 1;
-	} else {
-		$plus_line = 0;
-	}
+
 	# a sub-bullet not preceded by a blank line
 	if (/^\*\* / && $lastlen != 0) {
 		&putline(OUT, "");

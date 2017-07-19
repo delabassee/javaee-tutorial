@@ -47,7 +47,6 @@ until the lock has ended. Pessimistic locking is a better strategy than
 optimistic locking when the underlying data is frequently accessed and
 modified by many transactions.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -73,7 +72,6 @@ persistence provider reads and updates the version attribute when an
 entity instance is modified during a transaction. The application may
 read the version attribute, but must not modify the value.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

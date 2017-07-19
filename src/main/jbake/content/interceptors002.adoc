@@ -257,7 +257,6 @@ methods are invoked.
 after calling `Invocation.proceed` by calling the
 `InvocationContext.getTarget` method.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -490,7 +489,6 @@ superclass.
 The `@Priority` annotation requires an `int` value as an element. The
 lower the number, the higher the priority of the associated interceptor.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -534,7 +532,6 @@ EE Platform should have values higher than `PLATFORM_AFTER`.
 |=======================================================================
 
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

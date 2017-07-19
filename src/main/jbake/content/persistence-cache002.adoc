@@ -26,7 +26,6 @@ the cache modes as the value of the `shared-cache-mode` element in the
 </persistence-unit>
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -145,7 +144,6 @@ String personPK = ...;
 Person person = em.find(Person.class, personPK, props);
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -208,7 +206,6 @@ The `Cache` interface defines methods to do the following:
 from the cache
 * Clear the cache of all entity data
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

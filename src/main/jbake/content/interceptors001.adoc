@@ -35,7 +35,6 @@ Interceptor classes and methods are defined using metadata annotations,
 or in the deployment descriptor of the application that contains the
 interceptors and target classes.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

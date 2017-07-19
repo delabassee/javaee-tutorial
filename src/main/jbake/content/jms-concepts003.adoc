@@ -179,7 +179,6 @@ example, a connection could represent an open TCP/IP socket between a
 client and a provider service daemon. You use a connection to create one
 or more sessions.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

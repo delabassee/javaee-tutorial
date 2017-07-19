@@ -104,7 +104,6 @@ separated by commas.
 You need to specify the annotation only once for a given application, in
 any of the components.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

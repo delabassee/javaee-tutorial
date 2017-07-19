@@ -36,7 +36,6 @@ link:img_text/javaeett_dt_025.html[Description of "Figure 38-2 Database
 Schema for the roster Application"] +
  +
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

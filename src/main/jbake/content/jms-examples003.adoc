@@ -58,7 +58,6 @@ The examples for this section are in the
 tut-install`/examples/jms/simple/` directory, under the following
 subdirectories:
 
- +
 `producer/` +
 `synchconsumer/` +
 `asynchconsumer/` +
@@ -599,7 +598,6 @@ This section describes the receiving clients in an example that uses a
 message listener for asynchronous message delivery. This section then
 explains how to compile and run the clients using GlassFish Server.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -1069,7 +1067,6 @@ configured to use the `CLIENT_ACKNOWLEDGE` setting
 `JMSContext` that has been configured to use the default
 `AUTO_ACKNOWLEDGE` setting
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

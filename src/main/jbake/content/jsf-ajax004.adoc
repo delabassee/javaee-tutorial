@@ -22,7 +22,6 @@ link:jsf-ajax003.html#GKDER[Table 13-1] to create the Ajax request. The
 following sections explain the process of creating and sending an Ajax
 request using some of these attributes.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -70,7 +69,6 @@ mouse click:
 <h:outputText id="result" value="#{userNumberBean.response}" />
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

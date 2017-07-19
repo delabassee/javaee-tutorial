@@ -37,7 +37,6 @@ Root<Pet> pet = cq.from(Pet.class);
 cq.where(cb.equal(pet.get(Pet_.name), "Fido"));
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

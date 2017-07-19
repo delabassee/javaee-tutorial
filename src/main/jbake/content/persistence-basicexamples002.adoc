@@ -45,7 +45,6 @@ link:img_text/javaeett_dt_024.html[Description of "Figure 38-1 Database
 Schema for the order Application"] +
  +
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

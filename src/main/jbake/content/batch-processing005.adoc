@@ -240,7 +240,6 @@ link:cdi-adv001.html#CACDCFDE[Packaging CDI Applications] in
 link:cdi-adv.html#GJEHI[Chapter 25, "Contexts and Dependency Injection
 for Java EE: Advanced Topics"].
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -308,7 +307,6 @@ See link:#BCGIFJBB[Dependency Injection in Batch Artifacts] for
 instructions on how to define your batch artifacts to use dependency
 injection.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

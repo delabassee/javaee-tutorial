@@ -71,7 +71,6 @@ In this example, a custom cross-parameter constraint,
 numbers passed into the constructor match. The `@NotNull` constraint
 applies to all the parameters in the constructor.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

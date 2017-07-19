@@ -125,7 +125,6 @@ public class MyProcessor implements javax.batch.api.chunk.ItemProcessor {
 }
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

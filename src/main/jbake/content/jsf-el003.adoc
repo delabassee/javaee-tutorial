@@ -411,7 +411,6 @@ EL expression.
 For basic information on lambda expressions, see
 `http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html`.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

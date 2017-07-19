@@ -22,7 +22,6 @@ persistence provider and underlies the persistence context of an
 application. That is, the application reads and commits data through the
 normal entity manager operations without knowing about the cache.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

@@ -20,7 +20,6 @@ how to implement and use the file upload feature.
 The Duke's Forest case study provides a more complex example that
 uploads an image file and stores its content in a database.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

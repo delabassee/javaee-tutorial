@@ -286,7 +286,6 @@ use the arithmetic operators and literals that rvalue expressions can
 use but lvalue expressions cannot use. For example, the expression in
 the preceding example uses the `>` operator.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -875,7 +874,6 @@ This tag will render HTML that looks something like the following:
      return false;">My Early Years: Growing Up on Star7, by Duke</a>
 ----
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================

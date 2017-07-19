@@ -157,12 +157,10 @@ Table 10-14 Where the Core Tags Are Explained
 |Event-handling tags a|
 link:jsf-page-core002.html#BNASZ[Registering Listeners on Components]
 
- +
 
 |Data-conversion tags a|
 link:jsf-page-core001.html#BNAST[Using the Standard Converters]
 
- +
 
 |`f:facet` |link:jsf-page002.html#BNARZ[Using Data-Bound Table
 Components] and link:jsf-page002.html#BNASC[Laying Out Components with
@@ -171,25 +169,21 @@ the h:panelGrid and h:panelGroup Tags]
 |`f:loadBundle` a|
 link:webi18n002.html#BNAXY[Setting the Resource Bundle]
 
- +
 
 |`f:metadata` a|
 link:jsf-page002.html#GIQWQ[Using View Parameters to Configure
 Bookmarkable URLs]
 
- +
 
 |`f:param` a|
 link:jsf-page002.html#BNARU[Displaying a Formatted Message with the
 h:outputFormat Tag]
 
- +
 
 |`f:selectItem` and `f:selectItems` a|
 link:jsf-page002.html#BNASK[Using the f:selectItem and f:selectItems
 Tags]
 
- +
 
 |Validator tags |link:jsf-page-core003.html#BNATC[Using the Standard
 Validators]
@@ -198,7 +192,6 @@ Validators]
 link:jsf-ajax.html#GKIOW[Chapter 13, "Using Ajax with JavaServer Faces
 Technology"]
 
- +
 
 |=======================================================================
 

@@ -188,7 +188,6 @@ transit.
 * Specify `NONE` to indicate that the container must accept the
 constrained requests on any connection, including an unprotected one.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -215,7 +214,6 @@ To guarantee that data is transported over a secure connection, ensure
 that SSL support is configured for your server. SSL support is already
 configured for GlassFish Server.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
@@ -462,7 +460,6 @@ basic authentication scheme is chosen for the web application.
 * The `form-login-config` subelement specifies the login and error pages
 that should be used when form-based login is specified.
 
- +
 
 [width="100%",cols="100%",]
 |=======================================================================
