@@ -38,7 +38,7 @@
         <a href="${content.prev}">
           <img src="img/leftnav.gif" alt="Previous" />
           <br />
-          <span class="icon">Previous</span>
+          <span class="icon">Previous</span>&nbsp;
         </a>
       </#if>
     </td>
