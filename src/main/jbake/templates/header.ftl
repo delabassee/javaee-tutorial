@@ -8,17 +8,17 @@
     <link href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/style.css" rel="stylesheet">
   </head>
   <body>
-<table cellspacing="0" cellpadding="0" width="100%">
+<table id="doc-title" cellspacing="0" cellpadding="0" width="100%">
   <tr>
   <td align="left" valign="top">
-  <b>Java Platform, Enterprise Edition The Java EE Tutorial</b><br />
-  <b>Release 8 Java Platform, Enterprise Edition</b><br />
+  <b>Java Platform, Enterprise Edition (Java EE) 8</b><br />
+  <b>The Java EE Tutorial</b><br />
   E63026-01
   </td>
   </tr>
 </table>
 <hr />
-<table cellspacing="0" cellpadding="0" width="100%">
+<table id="top-nav" cellspacing="0" cellpadding="0" width="100%">
   <col width="33%" />
   <col width="*" />
   <col width="33%" />

@@ -1,6 +1,6 @@
 <#-- a footer template fragment included in the page template -->
 <hr />
-<table cellspacing="0" cellpadding="0" width="100%">
+<table id="bottom-nav" cellspacing="0" cellpadding="0" width="100%">
   <col width="33%" />
   <col width="*" />
   <col width="33%" />
