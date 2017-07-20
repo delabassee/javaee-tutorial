@@ -227,7 +227,19 @@ pre.prettyprint.highlight {
    font-size: 12px;
 }
 
+.vector-font {
+   color:grey; 
+   font-size: 20px;
+}
 
+#copyright {
+   padding-top: 10px;
+   padding-bottom: 4px;
+   display: table;
+   margin:0 auto;
+   color: grey;
+   font-size: 12px;
+}
 
 /* GENERAL ELEMENT TYPE STYLES */
 
