@@ -22,17 +22,16 @@
 
 <table width="90%" id="top-nav" cellspacing="0" cellpadding="0">
 	<colgroup>
-		<col width="12%" />
-		<col width="12%" />
+		<col width="12%"/>
+		<col width="12%"/>
 		<col width="*"/>
 	</colgroup>
 	<tr>
-		
 	    <#if content.prev??>
 		<td align="left">
 		<a href="${content.prev}">
-			<span class=" vector-font"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
-			<span vertical-align="super">Previous</span>
+			<span class="vector-font"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+			<span style="position:relative;top:-2px;">Previous</span>
 		</a>
 		</td>
 	    </#if>
@@ -41,7 +40,7 @@
 		<td align="left">
 		<a href="${content.next}">
 			<span class=" vector-font"><i class="fa fa-arrow-circle-right vector-font" aria-hidden="true"></i></span>
-			<span >Next</span>
+			<span style="position:relative;top:-2px;">Next</span>
 		</a>
 		</td>
 	    </#if>
@@ -49,7 +48,7 @@
 		<td align="right">
 		<a href="toc.html">
 			<span class=" vector-font"><i class="fa fa-list vector-font" aria-hidden="true"></i></span>
-			<span >Contents</span>
+			<span style="position:relative;top:-2px;">Contents</span>
 		</a>
 		</td>
 	</tr>
